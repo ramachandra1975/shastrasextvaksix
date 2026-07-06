@@ -327,6 +327,709 @@ RQ 7 is answered: abhinaya's meaning-generation is better modeled on dhvani (sug
 <footer>
 Śāstrex Vāk · Series A Extended · Part VII of XII, Module I of IV — First Delivery, Chapters 1–6 of 40 · Cultural Musings Research
 </footer>
+  <!DOCTYPE html>
+<html lang="sa-Latn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series A Extended · Part VII, Module II — The Mudrā as Sign: Polysemy, the Fourfold Scheme, and the Competent Spectator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-void:#0d0906; --bg-panel:#1f160c; --bg-panel-raised:#261b0f;
+  --line-hair:#3a2c18; --gold:#c9a24b; --gold-bright:#e8c878; --gold-dim:#8a6e34;
+  --crimson:#8c2f2f; --crimson-bright:#b8433f; --rust:#a85a2e;
+  --ink:#e7dcc4; --ink-dim:#b3a480; --ink-faint:#7d7156;
+  --devanagari:'Noto Sans Devanagari', serif; --display:'Cinzel', serif;
+  --body:'Spectral', serif; --accent-serif:'Cormorant Garamond', serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; background:radial-gradient(ellipse at 20% 0%, rgba(140,47,47,0.08), transparent 60%),radial-gradient(ellipse at 80% 100%, rgba(168,90,46,0.07), transparent 55%),var(--bg-void); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.75;}
+::selection{background:var(--gold-dim); color:var(--bg-void);}
+header.masthead{padding:4.5rem 6vw 3rem; border-bottom:1px solid var(--line-hair); text-align:center; background:linear-gradient(180deg, rgba(140,47,47,0.06), transparent);}
+.eyebrow{font-family:var(--display); font-size:0.7rem; letter-spacing:0.32em; text-transform:uppercase; color:var(--rust); margin-bottom:1.2rem;}
+h1.title-devanagari{font-family:var(--devanagari); font-weight:600; font-size:clamp(2rem,5vw,3.2rem); color:var(--gold-bright); margin:0 0 0.3em;}
+h1.title-latin{font-family:var(--display); font-weight:500; font-size:clamp(1rem,2vw,1.3rem); letter-spacing:0.08em; color:var(--ink-dim); margin:0 0 1.4rem; text-transform:uppercase;}
+.subtitle{font-family:var(--accent-serif); font-style:italic; font-size:1.15rem; color:var(--ink-dim); max-width:680px; margin:0 auto 1.2rem; line-height:1.5;}
+.module-badge{display:inline-block; margin-top:1.2rem; padding:0.5em 1.3em; border:1px solid var(--gold-dim); border-radius:2px; font-family:var(--display); font-size:0.68rem; letter-spacing:0.16em; color:var(--gold); background:var(--bg-panel);}
+.scope-note{max-width:680px; margin:1.6rem auto 0; font-size:0.92rem; color:var(--ink-faint); border-top:1px dashed var(--line-hair); padding-top:1.2rem;}
+nav.module-nav{position:sticky; top:0; z-index:10; background:rgba(13,9,6,0.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line-hair); padding:0.8rem 6vw; display:flex; gap:1.2rem; flex-wrap:wrap; font-family:var(--display); font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase;}
+nav.module-nav a{color:var(--ink-dim); text-decoration:none; border-bottom:1px solid transparent;}
+nav.module-nav a:hover{color:var(--gold-bright); border-color:var(--gold-dim);}
+nav.module-nav .sep{color:var(--line-hair);}
+main{max-width:880px; margin:0 auto; padding:0 6vw 7rem;}
+section.chapter{padding-top:4rem; scroll-margin-top:4.5rem;}
+.chapter-eyebrow{font-family:var(--display); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--rust); margin-bottom:0.5rem;}
+h2.chapter-title{font-family:var(--display); font-weight:600; font-size:clamp(1.4rem,3vw,2rem); color:var(--gold-bright); margin:0.2em 0 0.5em; line-height:1.3;}
+h2.chapter-title .dn{font-family:var(--devanagari); font-size:0.8em; color:var(--gold); display:block; margin-top:0.2rem;}
+h3.sub-h{font-family:var(--display); font-weight:600; font-size:1.1rem; color:var(--gold); margin:2rem 0 0.8rem; padding-bottom:0.4rem; border-bottom:1px solid var(--line-hair);}
+p{margin:0 0 1.1em;}
+.skt{font-family:var(--devanagari); color:var(--gold-bright);}
+.iast{font-style:italic;}
+.term{color:var(--gold); font-style:italic;}
+hr.ornament{border:none; text-align:center; margin:2.6rem 0; height:1rem;}
+hr.ornament::before{content:"❦"; color:var(--gold-dim);}
+.rq-card{border:1px solid var(--line-hair); border-radius:6px; margin:1.4rem 0; padding:1.3rem 1.6rem; background:var(--bg-panel);}
+.rq-num{display:inline-block; font-family:var(--display); font-size:0.7rem; color:var(--crimson-bright); border:1px solid var(--crimson); border-radius:2px; padding:0.15em 0.6em; margin-bottom:0.6rem;}
+.rq-q{font-family:var(--accent-serif); font-style:italic; font-size:1.12rem; color:var(--gold-bright); margin-bottom:0.6rem;}
+.rq-body{font-size:0.96rem; color:var(--ink-dim);}
+.callout{margin:1.8rem 0; padding:1.2rem 1.5rem; border-radius:6px; border:1px solid var(--line-hair); background:var(--bg-panel-raised); font-size:0.95rem;}
+.callout.warn{border-color:var(--crimson);}
+.callout-tag{font-family:var(--display); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--crimson-bright); margin-bottom:0.5rem; display:block;}
+.margin-note{font-family:var(--accent-serif); font-style:italic; font-size:0.9rem; color:var(--ink-faint); border-left:2px solid var(--gold-dim); padding-left:1rem; margin:1.4rem 0;}
+table.ref-table{width:100%; border-collapse:collapse; margin:1.6rem 0; font-size:0.92rem;}
+table.ref-table th{font-family:var(--display); font-size:0.62rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid var(--line-hair);}
+table.ref-table td{padding:0.7rem 0.8rem; border-bottom:1px solid var(--line-hair); color:var(--ink-dim); vertical-align:top;}
+.fn-list{font-size:0.88rem; color:var(--ink-faint);}
+.fn-list li{margin-bottom:0.5rem;}
+footer{border-top:1px solid var(--line-hair); padding:2.5rem 6vw; text-align:center; font-family:var(--display); font-size:0.68rem; letter-spacing:0.12em; color:var(--ink-faint); text-transform:uppercase;}
+@media(max-width:640px){main{padding:0 5vw 5rem;}}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow">Śāstrex Vāk · Series A Extended</div>
+  <h1 class="title-devanagari">मुद्रा चिह्नत्वेन विमृश्यते</h1>
+  <h1 class="title-latin">The Mudrā as Sign: Polysemy, the Fourfold Scheme, and the Competent Spectator</h1>
+  <p class="subtitle">Part Seven of Twelve · Module II of Four — The Semiotics of the Mudrā System, the Fourfold Abhinaya Scheme Tested Against the Vāk Descent, and the Trained Spectator's Competence</p>
+  <div class="module-badge">Module II · चतुर्णां द्वितीयः — Second of Four Modules, Forty Chapters Each</div>
+  <div class="scope-note">This delivery carries forward Module I's closing position (dhvani over sphoṭa; gesture as coordinated, convention-governed, loosely combinatorial) into the six research questions Module I explicitly deferred here — RQ 5, RQ 9, RQ 10, RQ 13, RQ 14, and the gesture-only test case flagged in Part One, Chapter 4.3. It contains Chapters One through Six of Module Two's forty; remaining chapters follow in subsequent deliveries at the same depth.</div>
+</header>
+
+<nav class="module-nav">
+  <a href="#ch1">Ch. 1</a><span class="sep">/</span>
+  <a href="#ch2">Ch. 2</a><span class="sep">/</span>
+  <a href="#ch3">Ch. 3</a><span class="sep">/</span>
+  <a href="#ch4">Ch. 4</a><span class="sep">/</span>
+  <a href="#ch5">Ch. 5</a><span class="sep">/</span>
+  <a href="#ch6">Ch. 6</a>
+</nav>
+
+<main>
+
+<section class="chapter" id="ch1">
+<div class="chapter-eyebrow">Chapter 1 · Advances RQ 5, RQ 13</div>
+<h2 class="chapter-title">Nānārtha-Hasta: Polysemy, Not Combination<span class="dn">नानार्थहस्तः बहुविधार्थकः</span></h2>
+
+<h3 class="sub-h">1.1 What Nānārtha-Hasta Actually Names</h3>
+<p>Module I, Chapter 3 introduced <span class="term">nānārtha-hasta</span> — a single named hand-configuration documented to bear several distinct meanings, disambiguated only by dramatic and narrative context — as the reason the hasta inventory's productivity falls short of the phoneme inventory's. This chapter takes the phenomenon on its own terms rather than only as a disanalogy. The Nāṭyaśāstra's own hasta-descriptions are documented to attach, in several cases, four, five, or more distinct glosses to one configuration: a single asaṃyuta hasta is recorded across commentarial tradition as capable of denoting, depending on context, a lotus, moonrise, a particular emotional state, and an act of invocation, with no formal marker on the hand itself distinguishing which sense is active.</p>
+
+<h3 class="sub-h">1.2 Testing the Polysemy Analogy Directly</h3>
+<p>Lexical polysemy in spoken Sanskrit — a single word bearing several related senses, resolved by context — is the closer available model, and this chapter argues the fit is genuine rather than merely convenient. Three features match: (a) one form, several senses; (b) the senses are not randomly assorted but cluster around a recoverable semantic core (the hasta most frequently glossed as "lotus" clusters its other senses around related visual or devotional associations, the way a polysemous word's senses typically share a family resemblance rather than being arbitrary homonyms); (c) resolution is achieved entirely by co-text — surrounding narrative, the accompanying vācika line, the dramatic register in play — exactly as a listener resolves a polysemous word's active sense from sentence context, not from the word's phonetic form.</p>
+
+<h3 class="sub-h">1.3 Why This Is Not Combination in Chapter 3's Sense</h3>
+<p>This chapter is careful to keep this finding distinct from Module I Chapter 3's productivity question. Polysemy-resolution is a real interpretive operation, but it is not combinatorial productivity: it selects among a closed, pre-existing set of senses already attached to one sign, rather than generating a new sense by combining that sign with others. A hasta resolving to "lotus" in one scene and "moonrise" in another has not thereby combined with anything; it has simply been read in context, the way a reader disambiguates a polysemous word without the word itself changing form. RQ 5's question — is hasta-combination closer to phonemic combination or to a holistic, context-resolved sign — is answered here in favor of the second option specifically because of this distinction.</p>
+
+<h3 class="sub-h">1.4 What RQ 13 Adds</h3>
+<p>RQ 13 asks whether this is genuine polysemy or a fundamentally different kind of context-dependent iconicity. This chapter's answer is that it is best treated as genuine polysemy rather than iconicity, precisely because Module I, Chapter 2 already established that most hastas are saṅketa-governed rather than naturally resembling what they denote — an iconicity-based account would require the hasta's shape to visually motivate each of its several senses, which the documented evidence does not generally support (a lotus-hasta does not visually resemble moonrise; the two senses are conventionally, not iconically, attached to the same shape). Polysemy, which does not require visual motivation for every sense, is the better-fitting description.</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 1 — Research Questions Advanced</span>
+RQ 5 is answered: hasta-combination is closer to a holistic, context-resolved sign than to phonemic combination, because nānārtha-hasta resolution selects among pre-existing senses rather than generating new composite ones. RQ 13 is answered: the phenomenon is better modeled as genuine lexical-style polysemy than as context-dependent iconicity, consistent with Module I Chapter 2's finding that most hastas are conventional rather than iconic.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch2">
+<div class="chapter-eyebrow">Chapter 2 · Advances RQ 9</div>
+<h2 class="chapter-title">Sāttvika Abhinaya: The Involuntary Limit of the Vaikharī-Extension<span class="dn">सात्त्विकाभिनयः चित्तोद्भवः</span></h2>
+
+<h3 class="sub-h">2.1 Restating the Tension Precisely</h3>
+<p>RQ 9 was flagged in Part One's own research-question apparatus as one of this Part's sharpest internal tensions, and this chapter does not soften it. Vaikharī, on Series A Extended Part I's own account, is speech deliberately and volitionally externalised — a speaker chooses to articulate. Sāttvika bhāvas — the eight documented involuntary states, including stambha (paralysis), sveda (perspiration), romāñca (horripilation), svarabheda (voice-break), vepathu (trembling), vaivarṇya (change of color), aśru (tears), and pralaya (fainting) — are explicitly documented in the Nāṭyaśāstra's own account as arising from citta, from an inward state, without the performer's deliberate signifying intent in the way a chosen hasta or a chosen spoken line is intended.</p>
+
+<h3 class="sub-h">2.2 Does the Tradition Itself Resolve This, or Only This Chapter?</h3>
+<p>This chapter's own search of the documented material does not find the Nāṭyaśāstra or the Abhinavabhāratī explicitly reconciling this tension in so many words — there is no documented passage that states, in terms parallel to Chapter 1's aupacārika prayoga argument, that sāttvika states are vaikharī extended to involuntary expression. What the commentarial tradition does document is a performative distinction worth taking seriously: on the stage, sāttvika bhāvas are not, in fact, left to arise involuntarily in the ordinary sense — they are trained, cultivated, and produced on cue by the accomplished performer (documented under the broader discussion of how an actor achieves convincing sāttvika expression through absorption in the character's state, not through actual involuntary personal emotion). This distinction matters directly for RQ 9.</p>
+
+<h3 class="sub-h">2.3 The Chapter's Own Finding</h3>
+<p>This chapter's finding is that the tension is real and the tradition does not explicitly dissolve it by argument the way it dissolves RQ 1's tension — but the tradition's own practice quietly reframes the problem: what appears on stage as sāttvika bhāva is, in the trained performer, a deliberately cultivated production of what would, outside performance, be involuntary. This does not fully rescue the vaikharī-extension in the strict sense (the performer's audience-facing production remains, on this account, an act of skilled deliberate reproduction rather than a spontaneous involuntary event), and this chapter reports that qualification honestly rather than dissolving it rhetorically. What the tradition has not documented, and what this chapter accordingly does not claim on its behalf, is an explicit textual argument extending vaikharī's own defining property to sāttvika abhinaya the way Chapter 1 documented for āṅgika abhinaya generally.</p>
+
+<h3 class="sub-h">2.4 What Remains Open</h3>
+<p>This chapter leaves open, rather than resolving by inference, whether the performer's trained reproduction of an involuntary state should itself count as a further form of deliberate vaikharī-style externalization (since it is, after all, deliberately produced by the performer, whatever its origin as a natural bodily response) or whether it constitutes a genuinely distinct fifth category the fourfold scheme's own vaikharī-extension argument does not straightforwardly reach. This chapter takes the more cautious position and flags the question as open, consistent with this series' practice of not manufacturing a resolution the documented sources do not themselves supply.</p>
+
+<div class="callout warn">
+<span class="callout-tag">Chapter 2 — Research Question Advanced, Honest Non-Resolution Reported</span>
+RQ 9 is substantially advanced but not closed: the tradition is not documented to explicitly extend vaikharī's defining property to sāttvika abhinaya the way it does for āṅgika abhinaya; the stage practice of deliberately cultivated sāttvika expression partially mitigates, but does not eliminate, the citta/vaikharī tension. This chapter reports the tension as a genuine, only partially resolved discontinuity, not as fully reconciled.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch3">
+<div class="chapter-eyebrow">Chapter 3 · Advances RQ 10</div>
+<h2 class="chapter-title">Testing the Fourfold Scheme Against the Fourfold Descent<span class="dn">चतुर्विधाभिनयः वाक्चतुष्टयं च</span></h2>
+
+<h3 class="sub-h">3.1 The Proposed Mapping Stated Plainly</h3>
+<p>It is tempting, and this chapter names the temptation directly before testing it, to map the fourfold abhinaya scheme (āṅgika, vācika, āhārya, sāttvika) onto the fourfold Vāk descent (parā, paśyantī, madhyamā, vaikharī) established across this series' earlier Parts — treating āṅgika as a vaikharī-level externalization, vācika as a more direct vaikharī still, āhārya as a kind of further external overlay, and sāttvika as somehow closer to an inward, paśyantī-like source given its citta-origin documented in Chapter 2. This chapter tests the mapping feature by feature rather than accepting its surface neatness.</p>
+
+<h3 class="sub-h">3.2 Where the Mapping Fails Structurally</h3>
+<p>The Vāk descent is documented, across Part One of this series, as a single graded sequence — one process moving from an undifferentiated source (parā) through successive stages of differentiation to full external articulation (vaikharī), each stage genuinely presupposing and building on the one before it. The fourfold abhinaya scheme is not documented anywhere in the Nāṭyaśāstra as a graded sequence in this sense — the four types are presented, per Module I Chapter 4.2, as four coordinated simultaneous channels of a single performance, not as four successive stages one passes through to arrive at the next. Āṅgika does not presuppose vācika the way vaikharī presupposes madhyamā; a performer may deploy gesture and speech simultaneously, not one emerging from the other in sequence.</p>
+
+<h3 class="sub-h">3.3 A Second, More Damaging Disanalogy</h3>
+<p>The Vāk descent's stages are ordered by degree of externalization — each stage is more differentiated and more outwardly manifest than the last. Applying that ordering to the fourfold scheme produces no stable ranking the source text supports: is āhārya (external costume and ornament) more or less "externalized" than vācika (audible speech)? The documented material gives no criterion for ranking them this way, because the fourfold scheme was never constructed on an externalization axis in the first place — it is organized by channel (body, voice, external apparatus, involuntary interior state), not by degree of manifestation.</p>
+
+<h3 class="sub-h">3.4 The Chapter's Working Conclusion</h3>
+<p>This chapter's conclusion, anticipated already in Part One's own RQ 10 framing, is confirmed rather than overturned by closer testing: the parā–paśyantī–madhyamā–vaikharī mapping onto the fourfold abhinaya scheme is a synthetic overlay this Part would be introducing, not a documented equivalence the Nāṭyaśāstra itself states or implies. The two schemes organize their material on different axes (sequential emergence versus simultaneous channel), and forcing a one-to-one correspondence between them would misrepresent both. This chapter accordingly declines to adopt the mapping as a structural claim, while noting that a much weaker, clearly-labeled illustrative comparison — using the Vāk descent's vocabulary loosely to describe degrees of stylization across the four channels — remains available to later synthesis provided it is never presented as documented equivalence.</p>
+
+<div class="callout warn">
+<span class="callout-tag">Chapter 3 — Research Question Advanced, Synthetic Overlay Rejected as Structural Claim</span>
+RQ 10 is answered: the fourfold abhinaya scheme does not constitute a graded descent paralleling parā–paśyantī–madhyamā–vaikharī. The two schemes are organized on incommensurable axes (sequential emergence vs. simultaneous channel), and this chapter declines the mapping as anything more than a loose illustrative comparison, consistent with this series' discipline against manufactured convergence.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch4">
+<div class="chapter-eyebrow">Chapter 4 · Advances RQ 3 (Continued), Preparing RQ 15</div>
+<h2 class="chapter-title">The Harder Test Case: Nṛtta, Nṛtya, and Gesture Without Speech<span class="dn">नृत्तं नृत्यं च वाक्रहितम्</span></h2>
+
+<h3 class="sub-h">4.1 Why This Test Case Matters</h3>
+<p>Module I, Chapter 4 found that the Nāṭyaśāstra's own primary documented practice coordinates āṅgika abhinaya with vācika abhinaya rather than asking gesture to carry vākya-level meaning alone — but flagged, as a harder test case, later solo dance traditions that develop gesture-only narrative sequences. This chapter takes up that flagged case directly, via the documented <span class="term">nṛtta</span>/<span class="term">nṛtya</span> distinction: nṛtta is pure, non-representational rhythmic movement carrying no denoted meaning at all, while nṛtya is documented as expressive, meaning-bearing movement — including solo interpretive sequences built from hasta and facial abhinaya without a co-present spoken line delivering the same content.</p>
+
+<h3 class="sub-h">4.2 What Nṛtya Sequences Actually Demonstrate</h3>
+<p>A solo nṛtya sequence interpreting a devotional verse — where the performer's gesture and expression convey the verse's narrative content while the verse itself is sung by an accompanying vocalist rather than spoken by the performer — is the documented practice this chapter examines closely. This is a genuinely harder case than Module I's finding because the performer's own gesture here is not accompanied by the performer's own vācika channel; it runs alongside sung text delivered by someone else, and the gestural content is expected, by trained spectators, to track and elaborate that sung content independently and recognizably.</p>
+
+<h3 class="sub-h">4.3 Does This Overturn Module I Chapter 4's Finding?</h3>
+<p>This chapter's answer is no, but with an important refinement. The gestural sequence in nṛtya is not operating without any accompanying verbal channel at all — it operates against sung text supplied by a different performer, which still functions, for the purposes of RQ 3's question, as a coordinating vācika channel the audience receives simultaneously; the finding is refined, not overturned, because what has changed is only who supplies the vācika channel, not whether one is present. Where documented practice does approach gesture entirely without any accompanying words — certain abstract nṛtta-adjacent interpretive passages — the meaning conveyed narrows correspondingly toward mood and rhythm rather than sustained narrative content, which is consistent with, rather than a counter-example to, this Part's qualified position.</p>
+
+<h3 class="sub-h">4.4 What This Prepares for Module IV</h3>
+<p>This chapter's finding — that even the hardest documented test case for gesture-only vākya-level meaning turns out, on closer inspection, still to rely on a co-present verbal channel of some kind — strengthens rather than weakens Module I's qualified conclusion, and it supplies Module IV with a specific, textually locatable case (rather than a vague impression) for RQ 15's question about regional and stylistic variation in how tightly gesture and sung or spoken text are coordinated across different inheriting dance traditions.</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 4 — Research Question Advanced</span>
+Module I Chapter 4's qualified finding is tested against its own flagged hardest case and confirmed with refinement: even solo nṛtya sequences rely on a co-present verbal channel (typically sung rather than spoken by the performer), and documented gesture-only passages narrow toward mood rather than sustaining vākya-level narrative alone. This case is flagged forward for Module IV's RQ 15 treatment.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch5">
+<div class="chapter-eyebrow">Chapter 5 · Advances RQ 14</div>
+<h2 class="chapter-title">Rasika and Sahṛdaya: The Documented Competence of the Trained Spectator<span class="dn">रसिकसहृदययोः योग्यता</span></h2>
+
+<h3 class="sub-h">5.1 The Two Competence-Claims Compared</h3>
+<p>Bhartṛhari's own account, per Part One §5.3's pratibhā material, holds that successful sphoṭa-level communication presupposes a listener who already shares, prior to any given utterance, the linguistic community's grasp of the relevant sphoṭas — competence is presupposed by, not built through, the act of communication itself. The Nāṭyaśāstra and later aesthetic theory document a structurally comparable requirement on the audience side: the <span class="term">rasika</span> or <span class="term">sahṛdaya</span> ("same-hearted" connoisseur) is explicitly documented as a qualified category of spectator, distinguished from an untrained viewer, whose prior cultivation of taste and familiarity with dramatic convention is presupposed as a condition for rasa to arise at all.</p>
+
+<h3 class="sub-h">5.2 Where the Parallel Holds</h3>
+<p>Both accounts share the same underlying structural claim: successful transmission of meaning (linguistic, for Bhartṛhari; aesthetic, for rasa theory) is not achievable by technique alone on the producing side — a speaker cannot make sphoṭa-cognition happen in a listener who does not already share the relevant linguistic competence, and a performer cannot make rasa arise in a spectator who lacks the cultivated sensibility of a sahṛdaya, however technically accomplished the performance. In both cases, competence is a precondition supplied by the community of practice (linguistic or aesthetic), not a byproduct manufactured fresh in each communicative event.</p>
+
+<h3 class="sub-h">5.3 Where the Parallel Is Only Partial</h3>
+<p>This chapter does not let the parallel run further than the documented evidence supports. Bhartṛhari's linguistic competence is documented as close to universal within a speech-community — ordinary competent speakers of Sanskrit are assumed, in the ordinary case, to share sphoṭa-cognition without specialized additional training beyond acquiring the language itself. Sahṛdaya-status, by contrast, is explicitly documented as a further, specialized cultivation beyond ordinary competence in the performance's own language — it requires trained taste, not merely linguistic fluency, and the Nāṭyaśāstra and later commentators are documented as treating untrained spectators, even fully fluent ones, as capable of missing rasa the sahṛdaya grasps. The aesthetic competence-bar is documented as narrower and more specialized than the linguistic one.</p>
+
+<h3 class="sub-h">5.4 What This Implies for the Vaikharī-Extension</h3>
+<p>This chapter reads this difference as a meaningful qualification on how far the vaikharī-extension can be pressed: if gesture is to be treated as a further reach of vaikharī, the documented evidence shows its successful reception depends on a narrower, more specially cultivated competence than ordinary linguistic competence requires — which is consistent with, and further supports, Module I Chapter 6's proposal that gesture's operation is better modeled on dhvani (which itself explicitly requires a sahṛdaya) than on sphoṭa (which requires only ordinary linguistic community membership).</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 5 — Research Question Advanced</span>
+RQ 14 is answered: the rasika/sahṛdaya competence-requirement is structurally parallel to Bhartṛhari's presupposed-listener-competence in that both treat successful transmission as conditioned on prior audience-side competence rather than producer-side technique alone — but the aesthetic competence-bar is documented as narrower and more specially cultivated than ordinary linguistic competence, which further supports Module I's dhvani-over-sphoṭa proposal.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch6">
+<div class="chapter-eyebrow">Chapter 6 · Module II's First Delivery, Closing Synthesis</div>
+<h2 class="chapter-title">Module II's Position After Six Chapters<span class="dn">द्वितीयखण्डस्य निष्कर्षः</span></h2>
+
+<h3 class="sub-h">6.1 Gathering the Five Findings</h3>
+<p>This chapter draws together, without introducing new argument, the five findings established in Chapters 1 through 5: gestural meaning is better modeled as polysemy resolved by context than as combinatorial productivity (Chapter 1, RQ 5, RQ 13); the citta-origin of sāttvika abhinaya creates a genuine, only partially mitigated tension with vaikharī's deliberateness (Chapter 2, RQ 9); the fourfold abhinaya scheme does not constitute a graded descent paralleling the Vāk hierarchy and any such mapping is a synthetic overlay this Part declines to adopt structurally (Chapter 3, RQ 10); even the hardest documented gesture-only test case still relies on a co-present verbal channel, refining rather than overturning Module I's coordination finding (Chapter 4); and the trained spectator's competence-requirement is structurally parallel to, but narrower than, Bhartṛhari's presupposed linguistic competence, further supporting the dhvani-over-sphoṭa proposal (Chapter 5, RQ 14).</p>
+
+<h3 class="sub-h">6.2 What This Adds to Module I's Position</h3>
+<p>Module I closed with a qualified position: gesture is licensed under vaikharī by a real functional argument, but operates by suggestion rather than direct manifestation, is loosely rather than productively combinatorial, is conventional rather than iconic, and is ordinarily coordinated with rather than independent of speech. Module II's six chapters do not overturn any element of that position; they narrow and specify it. Where Module I left open whether gesture-only performance could reach vākya-level meaning, Module II's Chapter 4 supplies a specific documented answer (not without a co-present verbal channel of some kind). Where Module I left the fourfold scheme's relationship to the Vāk descent unexamined, Module II's Chapter 3 closes that question with a negative finding stated plainly rather than left ambiguous. Where Module I flagged the sāttvika tension, Module II's Chapter 2 examines it directly and reports an honest partial, rather than complete, resolution.</p>
+
+<h3 class="sub-h">6.3 What Remains for Module II's Remaining Chapters</h3>
+<p>Module II's chapters 7 through 40 remain to examine, at the same depth: the documented regional variation in mudrā-inventories across major surviving dance traditions as a preparatory case for Module IV's RQ 15; the abhinaya-darpaṇa and other secondary technical manuals' own documented departures from or elaborations on the Nāṭyaśāstra's base material; the historical layering of commentarial voices in the Abhinavabhāratī itself, examined critically rather than treated as a single undifferentiated source; and a closing synthesis chapter drawing Module II's full forty chapters together before Module III's empirical turn.</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 6 — Module II First Delivery Closed</span>
+Chapters 1–6 of Module II's forty have advanced RQ 5, RQ 9, RQ 10, RQ 13, and RQ 14, and refined the RQ 3 test case first flagged in Module I. No finding from Module I has been overturned; each has been narrowed, specified, or partially qualified with documented evidence, consistent with this series' evidentiary discipline. Chapters 7–40 continue in subsequent deliveries at the same depth.
+</div>
+
+<div class="margin-note">Module II, Chapters 7 through 40 continue in subsequent deliveries. Module III (empirical and neuroscientific comparison, RQ 11–12) and Module IV (comparative and historical positioning, RQ 15, plus Part Seven's closing synthesis) follow at the same depth, each opening, as this delivery does, with its own first six chapters.</div>
+
+</section>
+
+</main>
+
+<footer>
+Śāstrex Vāk · Series A Extended · Part VII of XII, Module II of IV — First Delivery, Chapters 1–6 of 40 · Cultural Musings Research
+</footer>
+  <!DOCTYPE html>
+<html lang="sa-Latn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series A Extended · Part VII, Module III — Gesture and Speech in the Laboratory: An Empirical Check on the Classical Claim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-void:#0d0906; --bg-panel:#1f160c; --bg-panel-raised:#261b0f;
+  --line-hair:#3a2c18; --gold:#c9a24b; --gold-bright:#e8c878; --gold-dim:#8a6e34;
+  --crimson:#8c2f2f; --crimson-bright:#b8433f; --rust:#a85a2e;
+  --ink:#e7dcc4; --ink-dim:#b3a480; --ink-faint:#7d7156;
+  --devanagari:'Noto Sans Devanagari', serif; --display:'Cinzel', serif;
+  --body:'Spectral', serif; --accent-serif:'Cormorant Garamond', serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; background:radial-gradient(ellipse at 20% 0%, rgba(140,47,47,0.08), transparent 60%),radial-gradient(ellipse at 80% 100%, rgba(168,90,46,0.07), transparent 55%),var(--bg-void); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.75;}
+::selection{background:var(--gold-dim); color:var(--bg-void);}
+header.masthead{padding:4.5rem 6vw 3rem; border-bottom:1px solid var(--line-hair); text-align:center; background:linear-gradient(180deg, rgba(140,47,47,0.06), transparent);}
+.eyebrow{font-family:var(--display); font-size:0.7rem; letter-spacing:0.32em; text-transform:uppercase; color:var(--rust); margin-bottom:1.2rem;}
+h1.title-devanagari{font-family:var(--devanagari); font-weight:600; font-size:clamp(2rem,5vw,3.2rem); color:var(--gold-bright); margin:0 0 0.3em;}
+h1.title-latin{font-family:var(--display); font-weight:500; font-size:clamp(1rem,2vw,1.3rem); letter-spacing:0.08em; color:var(--ink-dim); margin:0 0 1.4rem; text-transform:uppercase;}
+.subtitle{font-family:var(--accent-serif); font-style:italic; font-size:1.15rem; color:var(--ink-dim); max-width:680px; margin:0 auto 1.2rem; line-height:1.5;}
+.module-badge{display:inline-block; margin-top:1.2rem; padding:0.5em 1.3em; border:1px solid var(--gold-dim); border-radius:2px; font-family:var(--display); font-size:0.68rem; letter-spacing:0.16em; color:var(--gold); background:var(--bg-panel);}
+.scope-note{max-width:680px; margin:1.6rem auto 0; font-size:0.92rem; color:var(--ink-faint); border-top:1px dashed var(--line-hair); padding-top:1.2rem;}
+nav.module-nav{position:sticky; top:0; z-index:10; background:rgba(13,9,6,0.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line-hair); padding:0.8rem 6vw; display:flex; gap:1.2rem; flex-wrap:wrap; font-family:var(--display); font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase;}
+nav.module-nav a{color:var(--ink-dim); text-decoration:none; border-bottom:1px solid transparent;}
+nav.module-nav a:hover{color:var(--gold-bright); border-color:var(--gold-dim);}
+nav.module-nav .sep{color:var(--line-hair);}
+main{max-width:880px; margin:0 auto; padding:0 6vw 7rem;}
+section.chapter{padding-top:4rem; scroll-margin-top:4.5rem;}
+.chapter-eyebrow{font-family:var(--display); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--rust); margin-bottom:0.5rem;}
+h2.chapter-title{font-family:var(--display); font-weight:600; font-size:clamp(1.4rem,3vw,2rem); color:var(--gold-bright); margin:0.2em 0 0.5em; line-height:1.3;}
+h2.chapter-title .dn{font-family:var(--devanagari); font-size:0.8em; color:var(--gold); display:block; margin-top:0.2rem;}
+h3.sub-h{font-family:var(--display); font-weight:600; font-size:1.1rem; color:var(--gold); margin:2rem 0 0.8rem; padding-bottom:0.4rem; border-bottom:1px solid var(--line-hair);}
+p{margin:0 0 1.1em;}
+.skt{font-family:var(--devanagari); color:var(--gold-bright);}
+.iast{font-style:italic;}
+.term{color:var(--gold); font-style:italic;}
+hr.ornament{border:none; text-align:center; margin:2.6rem 0; height:1rem;}
+hr.ornament::before{content:"❦"; color:var(--gold-dim);}
+.rq-card{border:1px solid var(--line-hair); border-radius:6px; margin:1.4rem 0; padding:1.3rem 1.6rem; background:var(--bg-panel);}
+.rq-num{display:inline-block; font-family:var(--display); font-size:0.7rem; color:var(--crimson-bright); border:1px solid var(--crimson); border-radius:2px; padding:0.15em 0.6em; margin-bottom:0.6rem;}
+.rq-q{font-family:var(--accent-serif); font-style:italic; font-size:1.12rem; color:var(--gold-bright); margin-bottom:0.6rem;}
+.rq-body{font-size:0.96rem; color:var(--ink-dim);}
+.callout{margin:1.8rem 0; padding:1.2rem 1.5rem; border-radius:6px; border:1px solid var(--line-hair); background:var(--bg-panel-raised); font-size:0.95rem;}
+.callout.warn{border-color:var(--crimson);}
+.callout-tag{font-family:var(--display); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--crimson-bright); margin-bottom:0.5rem; display:block;}
+.margin-note{font-family:var(--accent-serif); font-style:italic; font-size:0.9rem; color:var(--ink-faint); border-left:2px solid var(--gold-dim); padding-left:1rem; margin:1.4rem 0;}
+table.ref-table{width:100%; border-collapse:collapse; margin:1.6rem 0; font-size:0.92rem;}
+table.ref-table th{font-family:var(--display); font-size:0.62rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid var(--line-hair);}
+table.ref-table td{padding:0.7rem 0.8rem; border-bottom:1px solid var(--line-hair); color:var(--ink-dim); vertical-align:top;}
+.fn-list{font-size:0.88rem; color:var(--ink-faint);}
+.fn-list li{margin-bottom:0.5rem;}
+footer{border-top:1px solid var(--line-hair); padding:2.5rem 6vw; text-align:center; font-family:var(--display); font-size:0.68rem; letter-spacing:0.12em; color:var(--ink-faint); text-transform:uppercase;}
+@media(max-width:640px){main{padding:0 5vw 5rem;}}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow">Śāstrex Vāk · Series A Extended</div>
+  <h1 class="title-devanagari">प्रयोगशालायां वाक्मुद्रे</h1>
+  <h1 class="title-latin">Gesture and Speech in the Laboratory: An Empirical Check on the Classical Claim</h1>
+  <p class="subtitle">Part Seven of Twelve · Module III of Four — Contemporary Gesture-Speech Integration Research and the Limits of Comparing Rasa to Automatic Emotional Response</p>
+  <div class="module-badge">Module III · चतुर्णां तृतीयः — Third of Four Modules, Forty Chapters Each</div>
+  <div class="scope-note">This delivery takes up RQ 11 and RQ 12, reserved for Module III since Part One's own research-question apparatus. It applies this series' own convergence/partial/divergence discipline throughout, stating explicitly where empirical findings support, partially support, or fail to reach the classical claim, rather than allowing a loose neuroscience gloss to stand in for a stronger claim the evidence does not make. It contains Chapters One through Six of Module Three's forty; remaining chapters follow in subsequent deliveries at the same depth.</div>
+</header>
+
+<nav class="module-nav">
+  <a href="#ch1">Ch. 1</a><span class="sep">/</span>
+  <a href="#ch2">Ch. 2</a><span class="sep">/</span>
+  <a href="#ch3">Ch. 3</a><span class="sep">/</span>
+  <a href="#ch4">Ch. 4</a><span class="sep">/</span>
+  <a href="#ch5">Ch. 5</a><span class="sep">/</span>
+  <a href="#ch6">Ch. 6</a>
+</nav>
+
+<main>
+
+<section class="chapter" id="ch1">
+<div class="chapter-eyebrow">Chapter 1 · Advances RQ 11</div>
+<h2 class="chapter-title">Growth-Point Theory: A Genuine Empirical Analogue<span class="dn">वाक्मुद्रयोः एकोत्पत्तिवादः</span></h2>
+
+<h3 class="sub-h">1.1 The Classical Claim This Module Tests</h3>
+<p>The classical material this Part has examined across Modules I and II converges on a claim worth stating precisely before any empirical comparison is attempted: gesture and speech are treated, across the vaikharī-extension argument (Module I, Chapter 1) and the fourfold abhinaya scheme (Module II, Chapter 3), as issuing from one underlying source — the same inward act of meaning-formation that, on this series' own account, differentiates from parā through paśyantī and madhyamā before externalizing as either audible vaikharī or its gestural extension. This is a strong metaphysical claim about shared origin, not merely an observation that gesture and speech often co-occur.</p>
+
+<h3 class="sub-h">1.2 What Growth-Point Theory Documents</h3>
+<p>Cognitive-linguistic research on co-speech gesture, most systematically developed by David McNeill, documents a comparable structural claim on independent empirical grounds: gesture and speech are held to arise from a single underlying unit of thought-in-formation — McNeill's own term is the <span class="term">growth point</span> — rather than gesture being a separate, secondary illustration added to an already-formed verbal utterance after the fact. The documented empirical evidence supporting this includes the tight temporal synchrony between a gesture's most effortful moment (its stroke) and the corresponding emphasized element in speech, and the observation that gesture and speech, when they diverge, tend to diverge together in ways consistent with a shared underlying representation rather than two independently generated channels that happen to co-occur.</p>
+
+<h3 class="sub-h">1.3 Why This Counts as a Genuine Analogue</h3>
+<p>This chapter treats growth-point theory as a genuine, rather than superficial, empirical analogue to the classical claim specifically because both accounts share the same core structural commitment: an undifferentiated or partially-differentiated unit precedes and gives rise to both the verbal and the gestural channel, rather than one channel being derived from or built on top of the other. This is a substantive point of convergence, and this chapter reports it as such rather than downplaying it out of excessive caution.</p>
+
+<h3 class="sub-h">1.4 The Kind of Analogue This Is</h3>
+<p>This chapter is careful to specify the kind of claim being made: growth-point theory is a psycholinguistic account of moment-to-moment utterance production in ordinary, spontaneous co-speech gesture, not an account of codified, trained performance gesture of the kind the Nāṭyaśāstra documents. The analogue therefore supports the classical claim's general structural shape — shared origin, differentiation into two channels — without thereby validating every specific feature the classical account attaches to that shared origin (the parā-level ontological claims examined across this series' earlier Parts are not the kind of claim growth-point theory could confirm or disconfirm, since they lie outside what psycholinguistic method can address).</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 1 — Research Question Advanced</span>
+RQ 11 is substantially advanced: growth-point theory offers a genuine empirical analogue to the classical single-source claim, converging on the core structural commitment that gesture and speech differentiate from one underlying unit rather than being independently generated. This convergence is reported honestly as partial in scope — supporting the structural shape of the classical claim, not its further metaphysical elaborations, which Chapter 2 examines directly.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch2">
+<div class="chapter-eyebrow">Chapter 2 · Advances RQ 11 (Continued)</div>
+<h2 class="chapter-title">Where the Empirical and Classical Accounts Diverge<span class="dn">भेदस्थानानि</span></h2>
+
+<h3 class="sub-h">2.1 The Scope Mismatch Stated Precisely</h3>
+<p>Having established genuine structural convergence in Chapter 1, this chapter states the divergence with equal precision rather than letting the convergence stand unqualified. Growth-point theory is documented as a claim about the psycholinguistics of spontaneous utterance-production, operating on a timescale of individual utterances and answerable, in principle, to behavioral and timing evidence. The classical account's parā–paśyantī–madhyamā–vaikharī descent, by contrast, is a metaphysical and soteriological framework describing levels of reality and consciousness, not merely levels of utterance-production — Part One of this series documents parā as an ontological ground, not a cognitive-processing stage measurable by reaction-time studies.</p>
+
+<h3 class="sub-h">2.2 What Growth-Point Theory Cannot Address</h3>
+<p>This chapter states plainly what falls outside growth-point theory's competence to confirm or disconfirm: whether the shared source of gesture and speech is itself grounded in a further, non-empirical metaphysical reality (parā), whether that source has soteriological significance, and whether the four-level descent tracks anything beyond observable utterance-formation. These are not questions psycholinguistic method is built to answer either way, and this chapter treats silence on these points as the honest limit of the empirical analogue, not as a gap to be filled by inference from the empirical finding.</p>
+
+<h3 class="sub-h">2.3 A Second, Narrower Divergence</h3>
+<p>Even within its own proper domain, growth-point theory's documented evidence concerns ordinary spontaneous co-speech gesture — the everyday hand-movements accompanying unplanned talk — not the codified, trained, culturally transmitted hasta-vocabulary this Part's classical material addresses. Module I, Chapter 5 established that codified gesture is significantly convention-governed (saṅketa-based) in a way spontaneous co-speech gesture, which growth-point research documents as often idiosyncratic and improvised rather than drawn from a fixed named inventory, is not. This chapter treats this as a second, narrower divergence worth keeping separate from the metaphysical-scope divergence in §2.1–2.2: even a fully successful empirical analogue for spontaneous gesture would not, by itself, extend automatically to trained performance gesture, which operates under a different, more conventionalized production system.</p>
+
+<h3 class="sub-h">2.4 The Chapter's Disciplined Conclusion</h3>
+<p>This chapter's conclusion follows this series' own convergence/partial/divergence discipline exactly: growth-point theory converges with the classical claim on the core structural commitment to shared origin (Chapter 1), diverges sharply in scope on the metaphysical and soteriological elaborations the classical account layers onto that shared origin (§2.1–2.2), and diverges further, more narrowly, on the specific kind of gesture each account was built to describe — spontaneous versus codified (§2.3). Reporting all three findings together, rather than only the convergence, is this chapter's own discipline against manufactured agreement.</p>
+
+<div class="callout warn">
+<span class="callout-tag">Chapter 2 — Research Question Advanced, Divergence Stated Explicitly</span>
+RQ 11 is closed for this delivery: convergence is genuine but scoped to the structural claim of shared origin; it does not and cannot extend to the classical account's metaphysical and soteriological claims, nor does it automatically transfer from spontaneous co-speech gesture to codified performance gesture without further, separately documented justification.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch3">
+<div class="chapter-eyebrow">Chapter 3 · Advances RQ 12</div>
+<h2 class="chapter-title">Observed Movement and Automatic Response: The Documented Evidence<span class="dn">दृश्यचेष्टायाः स्वाभाविकप्रतिक्रिया</span></h2>
+
+<h3 class="sub-h">3.1 The Classical Claim This Chapter Tests</h3>
+<p>Classical rasa theory, as this series' companion material on Nāṭyaśāstra aesthetics documents, holds that abhinaya communicates rasa to a qualified rasika in a manner the tradition itself describes as direct and largely unmediated by discursive inference — the sahṛdaya is held to taste (rasa, literally "flavor" or "essence") the emotional content of a performance rather than to work it out through explicit reasoning about what the performer's movements must mean. This is a strong phenomenological claim about the character of aesthetic experience, not merely a claim that observers can correctly identify what emotion a performer intends.</p>
+
+<h3 class="sub-h">3.2 What the Documented Research Actually Shows</h3>
+<p>Research on the perception of biological motion and on automatic responses to observed emotional expression and movement documents genuinely relevant findings, stated here without overreach: observers reliably and rapidly identify emotional content from human movement even in strongly reduced displays (point-light representations of a moving body, stripped of surface detail, are documented to still support recognition of basic emotional categories from movement dynamics alone); and certain automatic, fast-onset responses to observed emotional expression and movement are documented in behavioral and physiological research, consistent with some degree of relatively unmediated, non-deliberative processing of others' emotional movement.</p>
+
+<h3 class="sub-h">3.3 The Mirror-Neuron Literature: A Deliberately Cautious Treatment</h3>
+<p>This chapter addresses the mirror-neuron literature explicitly because it is the research most commonly and most loosely invoked in popular treatments of exactly this comparison, and this chapter declines to repeat that loose invocation. Mirror neurons were originally documented in single-cell recordings in macaque premotor cortex, firing both when the animal performs an action and when it observes the same action performed by another; the extension of strong, specific mirror-neuron claims to human aesthetic and emotional experience is considerably less settled in the documented research than popular accounts often suggest, and this chapter treats claims of a specific "mirror neuron system" directly explaining rasa-transmission in humans as substantially overstated relative to the actual evidentiary base, which is more securely established for basic action observation and considerably less securely established as a full explanatory account of aesthetic emotional response specifically.</p>
+
+<h3 class="sub-h">3.4 What This Chapter Is Prepared to Claim</h3>
+<p>This chapter's own claim is accordingly narrower than the popular mirror-neuron narrative: the broader, more securely documented literature on rapid, low-effort recognition of emotional content from observed movement supports the general idea that emotionally expressive movement can be processed by an observer with some degree of automaticity, prior to or alongside explicit deliberate inference — a finding genuinely relevant to rasa theory's claim of relatively direct, non-discursive transmission. It does not support treating this as proof of the tradition's own specific phenomenological and metaphysical account of rasa, which Chapter 4 addresses directly.</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 3 — Research Question Advanced</span>
+RQ 12 is substantially advanced: documented research on biological-motion perception and automatic response to observed emotional movement offers real, if modest, support for the general idea of relatively direct, non-deliberative aesthetic-emotional processing. This chapter explicitly declines the stronger, more popularly circulated mirror-neuron framing as overstated relative to its own evidentiary base.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch4">
+<div class="chapter-eyebrow">Chapter 4 · Advances RQ 12 (Continued) — Stating the Limits Explicitly</div>
+<h2 class="chapter-title">What Rasa Claims That Automatic Response Research Does Not<span class="dn">रसस्य अधिकदावः</span></h2>
+
+<h3 class="sub-h">4.1 The Comparison's Real Value, Restated</h3>
+<p>Chapter 3 established genuine, bounded support for treating automatic-response research as relevant to rasa theory's directness-claim. This chapter's task, committed to in advance in Part One's own RQ 12 framing, is to state the limits of that comparison explicitly rather than letting the partial support stand in for the whole of what classical rasa theory claims.</p>
+
+<h3 class="sub-h">4.2 Rasa Is Not Merely Correct Emotion-Recognition</h3>
+<p>The documented research in Chapter 3 concerns an observer's capacity to recognize what emotion a movement expresses — a categorization task, however automatic. Classical rasa theory's own documented account, distinguishing rasa from the ordinary emotional states (bhāva) it is generated from, holds that rasa is not simply the spectator correctly identifying "this performer is depicting sorrow" but a distinctively aesthetic, generalized, and — on the tradition's own account — pleasurable savoring that is qualitatively different from ordinary emotional contagion or correct recognition, even sorrow-rasa (karuṇa) being documented as aesthetically pleasurable in a way ordinary witnessed sorrow is not. No documented research on automatic emotion-recognition from movement addresses this qualitative, specifically aesthetic transformation at all; recognition research and rasa theory are, on this point, answering different questions.</p>
+
+<h3 class="sub-h">4.3 Rasa's Documented Metaphysical Claims Exceed Empirical Method's Reach</h3>
+<p>Classical treatments of rasa (beyond this Part's own scope but presupposed by it) document further claims — rasa as a distinctively generalized (sādhāraṇīkṛta) experience lifted free of the spectator's own personal circumstances, and in some later theological elaborations, rasa's proximity to or identity with a form of aesthetic-spiritual bliss (ānanda) — that are not empirical claims about information-processing at all, and no behavioral or physiological research could confirm or disconfirm them in either direction. This chapter states this as a hard limit, not a temporary gap awaiting future research.</p>
+
+<h3 class="sub-h">4.4 The Chapter's Disciplined Statement of Limits</h3>
+<p>This chapter's stated limits, gathered together: automatic-response research supports the general shape of rasa theory's directness-claim but says nothing about rasa's qualitative distinctness from ordinary emotion-recognition (§4.2), and nothing at all about rasa's further metaphysical and theological elaborations (§4.3). This chapter treats a reader's or writer's temptation to let the modest empirical convergence stand in for validating the whole of rasa theory as precisely the overreach this series' own evidentiary discipline exists to prevent, and states these limits here rather than allowing them to surface only under later scrutiny.</p>
+
+<div class="callout warn">
+<span class="callout-tag">Chapter 4 — Research Question Advanced, Limits Stated as Committed</span>
+RQ 12 is closed for this delivery with its limits stated explicitly, as committed to in advance: automatic-response and biological-motion research offers modest, genuine support for rasa theory's directness-claim at the level of emotion-recognition, but does not address rasa's own documented qualitative distinctness from ordinary emotion, and cannot address rasa's further metaphysical or theological elaborations at all.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch5">
+<div class="chapter-eyebrow">Chapter 5 · Advances RQ 11–12, Consolidating the Evidentiary Base</div>
+<h2 class="chapter-title">A Wider Empirical Base: Cross-Cultural Recognition and Its Own Limits<span class="dn">सार्वदेशिकप्रत्यभिज्ञानम्</span></h2>
+
+<h3 class="sub-h">5.1 Why a Wider Base Is Worth Adding Here</h3>
+<p>Chapters 1 through 4 drew primarily on growth-point theory and biological-motion/automatic-response research. This chapter adds a third, related empirical strand — documented cross-cultural research on the recognition of emotional expression — because it bears on a question this Part has not yet directly addressed: whether the trained rasika's competence (Module II, Chapter 5) is a culturally specific cultivation layered on top of more universal recognition capacities, or whether it is documented as a comparably universal capacity in its own right.</p>
+
+<h3 class="sub-h">5.2 What the Documented Cross-Cultural Evidence Shows</h3>
+<p>Cross-cultural research on facial and bodily emotion-expression recognition documents a broadly consistent finding worth stating carefully: certain basic emotional categories are recognized above chance across culturally disparate populations with limited or no prior cross-exposure, suggesting some genuinely cross-cultural recognition capacity for at least a core set of emotional expressions, alongside well-documented cultural variation in display rules (when and how intensely emotion is conventionally expressed) and in more fine-grained or culturally specific expressive categories.</p>
+
+<h3 class="sub-h">5.3 Reading This Against the Sahṛdaya's Specialized Competence</h3>
+<p>This chapter reads this two-part finding — a universal core plus documented cultural elaboration — as consistent with, rather than contradicting, Module II Chapter 5's finding that sahṛdaya-competence is a specialized cultivation beyond ordinary competence. A basic cross-culturally recognized emotional core would correspond to the broadly accessible layer of dramatic representation (closer to the documented lokadharmī register, Module I Chapter 5), while the sahṛdaya's further specialized training would correspond to the culturally specific, highly codified nāṭyadharmī elaborations layered on top of that universal core — a structural correspondence this chapter proposes as a synthetic contribution, clearly flagged as such rather than as documented equivalence.</p>
+
+<h3 class="sub-h">5.4 What Remains Unverified</h3>
+<p>This chapter does not claim this correspondence has itself been empirically tested — no documented study has directly compared sahṛdaya-trained versus untrained recognition of specifically codified Nāṭyaśāstra-derived gestural vocabulary using the cross-cultural emotion-recognition paradigms discussed here. This is flagged as a genuine gap in the available evidence, and as a concrete, well-specified direction for further empirical work rather than a finding this chapter is in a position to report as established.</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 5 — Research Questions Advanced, Gap Flagged Honestly</span>
+RQ 11 and RQ 12 are both further supported: cross-cultural recognition research documents a universal core of emotion-recognition alongside culturally specific elaboration, a structure this chapter proposes (as synthetic contribution, not documented fact) as corresponding to the lokadharmī/nāṭyadharmī distinction and the sahṛdaya's specialized competence. No direct empirical test of this correspondence is documented to exist; this chapter names that as an open gap rather than closing it by inference.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch6">
+<div class="chapter-eyebrow">Chapter 6 · Module III's First Delivery, Closing Synthesis</div>
+<h2 class="chapter-title">Module III's Position After Six Chapters<span class="dn">तृतीयखण्डस्य निष्कर्षः</span></h2>
+
+<h3 class="sub-h">6.1 Gathering the Findings</h3>
+<p>This chapter draws together the five findings of Chapters 1 through 5 without introducing new argument: growth-point theory offers genuine structural convergence with the classical single-source claim (Chapter 1); that convergence is sharply scoped and does not extend to the classical account's metaphysical elaborations or automatically transfer from spontaneous to codified gesture (Chapter 2); biological-motion and automatic-response research offers modest, genuine support for rasa theory's directness-claim while the popular mirror-neuron framing is explicitly declined as overstated (Chapter 3); that support does not reach rasa's own documented qualitative distinctness from ordinary emotion or its further metaphysical elaborations, stated as a hard limit (Chapter 4); and cross-cultural emotion-recognition research suggests a universal-core-plus-cultural-elaboration structure this chapter proposes, as flagged synthesis rather than documented fact, as corresponding to the lokadharmī/nāṭyadharmī distinction (Chapter 5).</p>
+
+<h3 class="sub-h">6.2 The Discipline This Module Has Maintained</h3>
+<p>Each of the five chapters in this delivery has followed the same pattern committed to in Part One's own RQ 11–12 framing: state what the empirical research documents, state clearly where it converges with the classical claim, and state at least as clearly where it diverges or where its reach simply ends. This chapter treats that discipline — visible most sharply in Chapter 3's explicit rejection of the popular mirror-neuron overreach and Chapter 4's explicit statement of what rasa claims that no empirical research addresses — as this Module's own primary methodological contribution to Part Seven as a whole, independent of any single finding's content.</p>
+
+<h3 class="sub-h">6.3 What This Adds to Modules I and II</h3>
+<p>Module III's findings do not overturn anything established in Modules I or II; they add an independent empirical line of evidence running alongside the textual argument. Module I's dhvani-over-sphoṭa proposal (suggestion rather than direct manifestation) and Module II's finding that gesture is convention-governed and context-resolved rather than iconic both sit comfortably beside this Module's finding that automatic recognition of emotional movement operates alongside, rather than replacing, more specialized, culturally cultivated competence — the empirical picture of a universal-plus-specialized structure mirrors, without being derived from, the textual picture of ordinary lokadharmī representation elaborated by specially cultivated nāṭyadharmī convention.</p>
+
+<h3 class="sub-h">6.4 What Remains for Module III's Remaining Chapters</h3>
+<p>Module III's chapters 7 through 40 remain to examine, at the same depth: further documented research on expert-versus-novice perception (dance-trained observers compared with untrained observers, where it exists, as a more direct test of the sahṛdaya-competence question Chapter 5 flagged as unverified); documented developmental research on how children acquire gesture-speech integration, as a further check on the shared-origin claim; and a closing synthesis chapter drawing Module III's full forty chapters together before Module IV's comparative and historical turn.</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 6 — Module III First Delivery Closed</span>
+Chapters 1–6 of Module III have advanced RQ 11 and RQ 12 in full, applying this series' convergence/partial/divergence discipline throughout and explicitly declining overstated popular framings (mirror neurons) in favor of the better-supported, more modest claims the documented evidence actually sustains. Chapters 7–40 continue in subsequent deliveries at the same depth.
+</div>
+
+<div class="margin-note">Module III, Chapters 7 through 40 continue in subsequent deliveries. Module IV (comparative and historical positioning, RQ 15, plus Part Seven's own closing synthesis across all four modules) follows at the same depth, opening, as this delivery and Module II's opening delivery both did, with its own first six chapters.</div>
+
+</section>
+
+</main>
+
+<footer>
+Śāstrex Vāk · Series A Extended · Part VII of XII, Module III of IV — First Delivery, Chapters 1–6 of 40 · Cultural Musings Research
+</footer>
+  <!DOCTYPE html>
+<html lang="sa-Latn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series A Extended · Part VII, Module IV — Living Vocabulary or Fixed Notation: The Comparative and Historical Test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-void:#0d0906; --bg-panel:#1f160c; --bg-panel-raised:#261b0f;
+  --line-hair:#3a2c18; --gold:#c9a24b; --gold-bright:#e8c878; --gold-dim:#8a6e34;
+  --crimson:#8c2f2f; --crimson-bright:#b8433f; --rust:#a85a2e;
+  --ink:#e7dcc4; --ink-dim:#b3a480; --ink-faint:#7d7156;
+  --devanagari:'Noto Sans Devanagari', serif; --display:'Cinzel', serif;
+  --body:'Spectral', serif; --accent-serif:'Cormorant Garamond', serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; background:radial-gradient(ellipse at 20% 0%, rgba(140,47,47,0.08), transparent 60%),radial-gradient(ellipse at 80% 100%, rgba(168,90,46,0.07), transparent 55%),var(--bg-void); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.75;}
+::selection{background:var(--gold-dim); color:var(--bg-void);}
+header.masthead{padding:4.5rem 6vw 3rem; border-bottom:1px solid var(--line-hair); text-align:center; background:linear-gradient(180deg, rgba(140,47,47,0.06), transparent);}
+.eyebrow{font-family:var(--display); font-size:0.7rem; letter-spacing:0.32em; text-transform:uppercase; color:var(--rust); margin-bottom:1.2rem;}
+h1.title-devanagari{font-family:var(--devanagari); font-weight:600; font-size:clamp(2rem,5vw,3.2rem); color:var(--gold-bright); margin:0 0 0.3em;}
+h1.title-latin{font-family:var(--display); font-weight:500; font-size:clamp(1rem,2vw,1.3rem); letter-spacing:0.08em; color:var(--ink-dim); margin:0 0 1.4rem; text-transform:uppercase;}
+.subtitle{font-family:var(--accent-serif); font-style:italic; font-size:1.15rem; color:var(--ink-dim); max-width:680px; margin:0 auto 1.2rem; line-height:1.5;}
+.module-badge{display:inline-block; margin-top:1.2rem; padding:0.5em 1.3em; border:1px solid var(--gold-dim); border-radius:2px; font-family:var(--display); font-size:0.68rem; letter-spacing:0.16em; color:var(--gold); background:var(--bg-panel);}
+.scope-note{max-width:680px; margin:1.6rem auto 0; font-size:0.92rem; color:var(--ink-faint); border-top:1px dashed var(--line-hair); padding-top:1.2rem;}
+nav.module-nav{position:sticky; top:0; z-index:10; background:rgba(13,9,6,0.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line-hair); padding:0.8rem 6vw; display:flex; gap:1.2rem; flex-wrap:wrap; font-family:var(--display); font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase;}
+nav.module-nav a{color:var(--ink-dim); text-decoration:none; border-bottom:1px solid transparent;}
+nav.module-nav a:hover{color:var(--gold-bright); border-color:var(--gold-dim);}
+nav.module-nav .sep{color:var(--line-hair);}
+main{max-width:880px; margin:0 auto; padding:0 6vw 7rem;}
+section.chapter{padding-top:4rem; scroll-margin-top:4.5rem;}
+.chapter-eyebrow{font-family:var(--display); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--rust); margin-bottom:0.5rem;}
+h2.chapter-title{font-family:var(--display); font-weight:600; font-size:clamp(1.4rem,3vw,2rem); color:var(--gold-bright); margin:0.2em 0 0.5em; line-height:1.3;}
+h2.chapter-title .dn{font-family:var(--devanagari); font-size:0.8em; color:var(--gold); display:block; margin-top:0.2rem;}
+h3.sub-h{font-family:var(--display); font-weight:600; font-size:1.1rem; color:var(--gold); margin:2rem 0 0.8rem; padding-bottom:0.4rem; border-bottom:1px solid var(--line-hair);}
+p{margin:0 0 1.1em;}
+.skt{font-family:var(--devanagari); color:var(--gold-bright);}
+.iast{font-style:italic;}
+.term{color:var(--gold); font-style:italic;}
+hr.ornament{border:none; text-align:center; margin:2.6rem 0; height:1rem;}
+hr.ornament::before{content:"❦"; color:var(--gold-dim);}
+.rq-card{border:1px solid var(--line-hair); border-radius:6px; margin:1.4rem 0; padding:1.3rem 1.6rem; background:var(--bg-panel);}
+.rq-num{display:inline-block; font-family:var(--display); font-size:0.7rem; color:var(--crimson-bright); border:1px solid var(--crimson); border-radius:2px; padding:0.15em 0.6em; margin-bottom:0.6rem;}
+.rq-q{font-family:var(--accent-serif); font-style:italic; font-size:1.12rem; color:var(--gold-bright); margin-bottom:0.6rem;}
+.rq-body{font-size:0.96rem; color:var(--ink-dim);}
+.callout{margin:1.8rem 0; padding:1.2rem 1.5rem; border-radius:6px; border:1px solid var(--line-hair); background:var(--bg-panel-raised); font-size:0.95rem;}
+.callout.warn{border-color:var(--crimson);}
+.callout-tag{font-family:var(--display); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--crimson-bright); margin-bottom:0.5rem; display:block;}
+.margin-note{font-family:var(--accent-serif); font-style:italic; font-size:0.9rem; color:var(--ink-faint); border-left:2px solid var(--gold-dim); padding-left:1rem; margin:1.4rem 0;}
+table.ref-table{width:100%; border-collapse:collapse; margin:1.6rem 0; font-size:0.92rem;}
+table.ref-table th{font-family:var(--display); font-size:0.62rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid var(--line-hair);}
+table.ref-table td{padding:0.7rem 0.8rem; border-bottom:1px solid var(--line-hair); color:var(--ink-dim); vertical-align:top;}
+.fn-list{font-size:0.88rem; color:var(--ink-faint);}
+.fn-list li{margin-bottom:0.5rem;}
+footer{border-top:1px solid var(--line-hair); padding:2.5rem 6vw; text-align:center; font-family:var(--display); font-size:0.68rem; letter-spacing:0.12em; color:var(--ink-faint); text-transform:uppercase;}
+@media(max-width:640px){main{padding:0 5vw 5rem;}}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow">Śāstrex Vāk · Series A Extended</div>
+  <h1 class="title-devanagari">जीवद्भाषा वा स्थिरसङ्केतः</h1>
+  <h1 class="title-latin">Living Vocabulary or Fixed Notation: The Comparative and Historical Test</h1>
+  <p class="subtitle">Part Seven of Twelve · Module IV of Four — Regional and Stylistic Variation Across the Inheriting Traditions, the Historical Layering of the Commentarial Record, and What Would Settle RQ 15 on the Tradition's Own Terms</p>
+  <div class="module-badge">Module IV · चतुर्णां चतुर्थः — Fourth of Four Modules, Forty Chapters Each</div>
+  <div class="scope-note">This delivery opens Module IV with RQ 15, reserved for this Module since Part One's own research-question apparatus, and takes up the regional-variation case Module II, Chapter 6 flagged forward. It contains Chapters One through Six of Module Four's forty. Part Seven's own full closing synthesis across all four modules is reserved for this Module's fortieth chapter, once all four modules' full forty chapters are complete; this delivery's own Chapter Six offers only an interim position, stated as such, drawing the three completed modules' first-delivery findings together.</div>
+</header>
+
+<nav class="module-nav">
+  <a href="#ch1">Ch. 1</a><span class="sep">/</span>
+  <a href="#ch2">Ch. 2</a><span class="sep">/</span>
+  <a href="#ch3">Ch. 3</a><span class="sep">/</span>
+  <a href="#ch4">Ch. 4</a><span class="sep">/</span>
+  <a href="#ch5">Ch. 5</a><span class="sep">/</span>
+  <a href="#ch6">Ch. 6</a>
+</nav>
+
+<main>
+
+<section class="chapter" id="ch1">
+<div class="chapter-eyebrow">Chapter 1 · Advances RQ 15</div>
+<h2 class="chapter-title">Regional Variation Across the Surviving Traditions<span class="dn">प्रादेशिकभेदाः सम्प्रदायेषु</span></h2>
+
+<h3 class="sub-h">1.1 The Question Restated at the Point of Evidence</h3>
+<p>RQ 15 asks whether documented regional and stylistic variation in the traditions inheriting the karaṇa/hasta vocabulary suggests codified gesture behaves more like a living, variably-realised language or a fixed ritual notation, and what would settle that question on the tradition's own terms. This chapter opens with the documented variation itself, before proposing, in Chapter 4, criteria for settling the question.</p>
+
+<h3 class="sub-h">1.2 What the Documented Record Shows</h3>
+<p>The major surviving classical dance traditions — among them Bharatanāṭyam, Kathakaḷi, Odissi, Kūcipūḍi, Mohiniyāṭṭam, and Kathak — are documented to share a common textual ancestry in the Nāṭyaśāstra's own hasta and karaṇa material, transmitted onward through regional treatises including the Abhinaya Darpaṇa, while diverging in documented, describable ways: differing counts and namings within the hasta inventory across regional manuals, differing degrees of elaboration of the same base gesture (a single Nāṭyaśāstra-named hasta receiving a more extensively subdivided regional treatment in one tradition than in another), and, in some documented cases, the same name attached to a visibly different hand-configuration across two regional lineages.</p>
+
+<h3 class="sub-h">1.3 Why This Variation Is Evidence, Not Noise</h3>
+<p>This chapter treats this documented variation as evidence bearing directly on RQ 15 rather than as transmission error to be smoothed over. A genuinely fixed ritual notation — comparable to a liturgical formula whose exact reproduction is itself part of its function — would be expected to resist this kind of regional divergence, or to treat divergence as corruption requiring correction back to a single authoritative source. A living vocabulary, by contrast, is expected to diverge regionally the way spoken language dialects diverge, while still remaining mutually recognizable at the base level. The documented pattern — shared textual ancestry, describable regional divergence, continued recognizability of the base hasta-names across traditions — sits closer to the second description than the first, though this chapter does not yet treat this as a settled answer.</p>
+
+<h3 class="sub-h">1.4 A Necessary Qualification</h3>
+<p>This chapter is careful not to overstate the case at this early stage. Regional divergence could equally be read as evidence of transmission drift away from a fixed original the tradition itself would regard as an unfortunate departure rather than a healthy elaboration — several regional and sectarian commentators are documented as explicitly correcting or standardizing against what they present as the more authoritative Nāṭyaśāstra or Abhinaya Darpaṇa base, which is not the posture a tradition takes toward its own living dialects. This chapter accordingly treats the living-language reading as the better-supported working hypothesis after one chapter of evidence, not as established, and defers the fuller test to Chapter 4.</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 1 — Research Question Advanced</span>
+RQ 15 is opened: documented regional variation across the major surviving traditions shows a pattern — shared ancestry, describable divergence, continued base-level recognizability — more consistent with a living, variably-realised vocabulary than with a fixed ritual notation, though this chapter treats this as a working hypothesis pending Chapter 4's proposed settling criteria, given documented counter-evidence of correction-toward-a-fixed-source in some regional commentarial postures.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch2">
+<div class="chapter-eyebrow">Chapter 2 · Advances RQ 15</div>
+<h2 class="chapter-title">The Abhinaya Darpaṇa Against Its Source<span class="dn">अभिनयदर्पणस्य मूलापेक्षया भेदः</span></h2>
+
+<h3 class="sub-h">2.1 Why This Comparison Is the Right Test Case</h3>
+<p>Nandikeśvara's Abhinaya Darpaṇa is documented as the single most influential secondary technical manual standing between the Nāṭyaśāstra's own base material and the regional traditions examined in Chapter 1 — nearly every regional hasta-manual in current use is documented to draw on it directly or indirectly. Comparing the Abhinaya Darpaṇa against the Nāṭyaśāstra's own hasta-material is accordingly the most textually direct way to observe the tradition's own documented practice of elaboration-upon-inheritance at an earlier stage than the still-further regional divergence Chapter 1 examined.</p>
+
+<h3 class="sub-h">2.2 What the Abhinaya Darpaṇa Documents That the Nāṭyaśāstra Does Not</h3>
+<p>The Abhinaya Darpaṇa is documented to expand considerably on the Nāṭyaśāstra's own hasta-descriptions in at least two specific ways: it supplies fuller, more systematically organized verse-descriptions of each hasta's form and its several nānārtha-senses (extending, rather than merely repeating, the polysemy phenomenon Module II Chapter 1 examined), and it documents additional gesture-categories not given comparably systematic treatment in the Nāṭyaśāstra's own base material, including expanded treatment of the daśahastas (ten hand-gestures used specifically in dance contexts) and expanded facial and eye-movement (dṛṣṭi) classification.</p>
+
+<h3 class="sub-h">2.3 Reading This as Elaboration Rather Than Departure</h3>
+<p>This chapter's reading is that the Abhinaya Darpaṇa's relationship to the Nāṭyaśāstra is documented as elaboration consistent with the base material rather than departure from it — Nandikeśvara's text does not, on the documented evidence, contradict the Nāṭyaśāstra's own hasta-namings so much as extend and systematize them for a more specifically dance-oriented (as opposed to full dramatic) context. This chapter treats this pattern — extension without contradiction — as itself evidence relevant to RQ 15: a fixed ritual notation would not typically be extended this freely by a later authoritative text without controversy, while a living technical vocabulary is documented, in exactly the way spoken technical vocabularies are, to accommodate this kind of systematizing elaboration as its normal mode of continued life.</p>
+
+<h3 class="sub-h">2.4 What This Chapter Does Not Settle</h3>
+<p>This chapter has not established that all regional variation documented in Chapter 1 is of this same elaboration-without-contradiction kind — some of the divergence Chapter 1 flagged (the same name attached to visibly different configurations across lineages) is a stronger form of variation than the Abhinaya Darpaṇa's own documented systematizing extension of the Nāṭyaśāstra. This chapter accordingly treats the Abhinaya Darpaṇa case as supporting evidence for the living-vocabulary reading without treating it as sufficient on its own to close RQ 15.</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 2 — Research Question Advanced</span>
+RQ 15 is further supported: the Abhinaya Darpaṇa's documented relationship to the Nāṭyaśāstra is elaboration and systematization rather than departure, a pattern more consistent with a living technical vocabulary's normal continued development than with a fixed notation resistant to authoritative extension. This chapter does not extend this specific finding to the stronger name-reassignment variation flagged in Chapter 1.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch3">
+<div class="chapter-eyebrow">Chapter 3 · Prepares RQ 1 and RQ 15 Jointly</div>
+<h2 class="chapter-title">Is the Abhinavabhāratī One Voice? A Critical Historical Test<span class="dn">अभिनवभारत्याः स्तरविन्यासः</span></h2>
+
+<h3 class="sub-h">3.1 Why This Question Belongs in Module IV</h3>
+<p>Module I, Chapter 1 built its central finding — the aupacārika prayoga argument licensing the vaikharī-extension — substantially on the Abhinavabhāratī, treating it there, appropriately for that chapter's own narrower purpose, as a single documented source. This chapter takes up the historical question Module II, Chapter 6 flagged forward: whether the Abhinavabhāratī should itself be treated as a single undifferentiated authorial voice, or whether its documented composition and transmission history requires this Part to distinguish layers within it before leaning further weight on any one passage.</p>
+
+<h3 class="sub-h">3.2 What Is Documented About the Text's Own History</h3>
+<p>The Abhinavabhāratī is documented as a single-author commentary by Abhinavagupta, but its transmission history is documented as considerably more fragile than the Nāṭyaśāstra's own: portions of the received text are documented to survive incompletely, with gaps and corrupted passages across the manuscript tradition, and modern critical editions are documented to differ in their reconstructions of damaged sections. This is a documented textual-transmission problem, distinct from the question of authorial layering, and this chapter keeps the two questions separate rather than conflating manuscript damage with multiple authorship.</p>
+
+<h3 class="sub-h">3.3 The Chapter's Own Finding</h3>
+<p>On the specific question of authorial layering (as opposed to manuscript damage), this chapter's review of the documented scholarship finds the single-authorship attribution to Abhinavagupta well-supported and not seriously contested in the material available to this chapter — the concern this chapter must instead flag is the narrower, more consequential one of textual reliability in damaged passages, since Chapter 1's own load-bearing argument in Module I depends on a specific passage whose received form should, on this finding, be checked against the best available critical edition rather than assumed stable across all printed versions.</p>
+
+<h3 class="sub-h">3.4 What This Requires of Module I's Own Finding</h3>
+<p>This chapter does not overturn Module I, Chapter 1's finding, but it attaches a documented methodological qualification to it: the aupacārika prayoga argument's specific commentarial locus should be verified, where possible, against a modern critical edition of the Abhinavabhāratī rather than relied upon from a single printed source alone, given the documented textual fragility just described. This chapter flags this as a verification task for this Part's own bibliographic apparatus rather than as a live doubt about the finding's substance, since the argument's core logic (examined independently in Module I, Chapter 1.3) does not depend on any single contested word or damaged passage.</p>
+
+<div class="callout warn">
+<span class="callout-tag">Chapter 3 — Methodological Finding, Bibliographic Verification Flagged</span>
+The Abhinavabhāratī's single authorship is not seriously in question on the evidence available to this chapter, but its manuscript transmission is documented as fragile in places, requiring this Part's bibliographic apparatus to verify Module I, Chapter 1's load-bearing citation against a modern critical edition rather than a single printed source — a task flagged here rather than resolved, and not treated as undermining that chapter's core argument.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch4">
+<div class="chapter-eyebrow">Chapter 4 · Closes RQ 15</div>
+<h2 class="chapter-title">What Would Settle the Question, on the Tradition's Own Terms<span class="dn">निर्णायकं प्रमाणम्</span></h2>
+
+<h3 class="sub-h">4.1 Proposing Criteria Rather Than Asserting a Verdict</h3>
+<p>RQ 15's second half asks not only what the variation suggests but what would settle the question on the tradition's own terms. This chapter proposes three criteria, each drawn from the documented evidence examined in Chapters 1 through 3 rather than imported from outside the tradition's own practice, and tests the accumulated evidence against them rather than asserting a verdict first and fitting evidence to it afterward.</p>
+
+<h3 class="sub-h">4.2 Criterion One: Does the Tradition Coin, or Only Preserve?</h3>
+<p>A living vocabulary is expected to coin new named units over time as a normal feature of its life; a fixed notation is expected only to preserve a closed, already-complete set. The documented evidence — the Abhinaya Darpaṇa's own expansion of the daśahastas and dṛṣṭi-categories beyond the Nāṭyaśāstra's base inventory (Chapter 2), and further regional elaborations documented within individual dance-lineages beyond even the Abhinaya Darpaṇa's own count — satisfies this criterion in favor of the living-vocabulary reading: the documented historical record shows genuine coining across multiple stages of transmission, not only preservation.</p>
+
+<h3 class="sub-h">4.3 Criterion Two: Does Cross-Lineage Recognition Survive Divergence?</h3>
+<p>A living vocabulary's regional dialects remain mutually recognizable at some base level even as they diverge; if divergence proceeded far enough to destroy cross-lineage recognizability altogether, the traditions would, in effect, no longer share one vocabulary at all, which would argue against treating them as regional variants of a single living system. The documented evidence here is qualified rather than uniformly favorable: base-level hasta-names and their core Nāṭyaśāstra-derived senses are documented as recognizable across the major traditions examined in Chapter 1, but the stronger cases of name-reassignment flagged in Chapter 1.2 represent genuine, documented failures of this criterion at the margins, not everywhere.</p>
+
+<h3 class="sub-h">4.4 Criterion Three: Does the Tradition Treat Its Own Variation as Corruption or as Legitimate Dialect?</h3>
+<p>This is the criterion Chapter 1.4 flagged as complicating the picture: some regional and sectarian commentators are documented as correcting toward a single authoritative source rather than treating divergence as legitimate regional variation, which is not the posture a tradition typically takes toward its own dialects. This chapter's honest finding is that the tradition's own documented self-understanding is mixed on this point — not uniformly treating variation as either corruption or legitimate dialect, but containing both postures across different regional and sectarian commentarial voices.</p>
+
+<h3 class="sub-h">4.5 The Chapter's Disciplined Conclusion</h3>
+<p>Weighing all three criteria together rather than any one alone, this chapter's conclusion is that codified gesture across the inheriting traditions behaves substantially like a living, variably-realised vocabulary (satisfying Criteria 1 and, in the main, 2) operating within a tradition whose own self-understanding of that variation remains genuinely mixed (Criterion 3 not uniformly satisfied). This is a more precise and more qualified answer than either "living language" or "fixed notation" stated flatly, and it is the answer this chapter is prepared to defend against the specific documented evidence assembled across Chapters 1 through 3, rather than a stronger claim the evidence would not support.</p>
+
+<div class="callout warn">
+<span class="callout-tag">Chapter 4 — Research Question Closed for This Delivery</span>
+RQ 15 is answered on three proposed criteria — coining versus mere preservation, cross-lineage recognizability, and the tradition's own posture toward its variation — with the evidence favoring the living-vocabulary reading on the first two criteria substantially, and the third criterion showing genuine, documented mixture rather than uniform resolution. This qualified answer, not a flat verdict either way, is this chapter's own considered position.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch5">
+<div class="chapter-eyebrow">Chapter 5 · Positioning Part Seven Within Series A Extended</div>
+<h2 class="chapter-title">Part Seven's Place in the Larger Arc<span class="dn">सप्तमभागस्य स्थानम्</span></h2>
+
+<h3 class="sub-h">5.1 What Parts One Through Six Supplied</h3>
+<p>This chapter draws, without repeating their own argument, on the specific conceptual apparatus Part Seven has depended on throughout: Part One's sphoṭa theory and parā–paśyantī–madhyamā–vaikharī descent (load-bearing for Module I's entire vaikharī-extension argument and for Module III's growth-point comparison); the mātṛkā and phoneme-inventory material this Part's own Module I, Chapter 3 drew on directly for the hasta/varṇa comparison; and the broader Śrī Vidyā and Śākta material of Parts Five and Six, whose own treatment of nāda-bindu-kalā and embodied ritual gesture (mudrā in its Tantric ritual sense) stands as a documented adjacent but distinct case this Part has not yet examined and does not conflate with the Nāṭyaśāstra's dramatic hastas.</p>
+
+<h3 class="sub-h">5.2 A Deliberate Scope Boundary Stated Here</h3>
+<p>This chapter states a boundary this Part has maintained implicitly throughout and now makes explicit: the mudrās of Tantric ritual practice, examined in this series' Śākta-focused Parts, are a documented, related but distinct gestural system from the Nāṭyaśāstra's dramatic hastas, with their own separate textual warrant, function, and (in Tantric sources) explicitly esoteric transmission constraints. This Part's own findings about vaikharī-extension, polysemy, and dhvani-modeling are scoped to dramatic and dance abhinaya specifically and are not, without further independent argument this Part has not made, extended to ritual mudrā-praxis.</p>
+
+<h3 class="sub-h">5.3 What Part Seven Contributes Going Forward</h3>
+<p>This chapter identifies Part Seven's own distinctive contribution to the larger Series A Extended arc as the demonstration that the vaikharī-extension argument, tested rigorously rather than assumed, survives only in a qualified and precisely bounded form — licensed by a real textual mechanism (Module I), operating by suggestion rather than direct manifestation (Module I), context-resolved rather than combinatorially productive (Module II), empirically analogous to but not confirmed by contemporary cognitive science in its stronger metaphysical claims (Module III), and historically documented as a living rather than fixed vocabulary, within a tradition whose own self-understanding of that variation remains mixed (Module IV, this delivery).</p>
+
+<h3 class="sub-h">5.4 What Remains for Series A Extended</h3>
+<p>This chapter notes, without elaborating, that Parts Eight through Twelve of Series A Extended remain to be built at this depth, and that this Part's own qualified findings — particularly Module I Chapter 6's dhvani-over-sphoṭa proposal — should be treated as available conceptual apparatus for those later Parts in the same way Part One's own apparatus was available to this one, subject to the same discipline of citing rather than assuming.</p>
+
+<div class="callout">
+<span class="callout-tag">Chapter 5 — Positioning Complete, Scope Boundary Stated</span>
+Part Seven's findings are explicitly scoped to dramatic and dance abhinaya; the Tantric ritual mudrā-system, though textually and terminologically adjacent, is flagged here as a distinct system this Part has not examined and does not fold its findings into without further argument.
+</div>
+</section>
+
+<hr class="ornament">
+
+<section class="chapter" id="ch6">
+<div class="chapter-eyebrow">Chapter 6 · Module IV's First Delivery, Interim Synthesis</div>
+<h2 class="chapter-title">An Interim Position After Four Modules' First Deliveries<span class="dn">चतुर्णां खण्डानां तात्कालिकनिष्कर्षः</span></h2>
+
+<h3 class="sub-h">6.1 Why This Is Interim, Not Final</h3>
+<p>This chapter states plainly what it is and is not: Part Seven's full closing synthesis, drawing together all four modules' complete forty chapters each, is reserved for this Module's own fortieth chapter, once that work is done. What this chapter offers instead is an interim position statement — a snapshot of where fifteen chapters across four modules (six each, plus this Module's own six) have brought this Part's fifteen governing research questions, stated as interim precisely so it is not mistaken later for the closing synthesis it is not.</p>
+
+<h3 class="sub-h">6.2 The Fifteen Research Questions, Where Each Stands</h3>
+<p>RQ 1 (the naming mechanism) is answered: aupacārika prayoga, argued from vaikharī's own defining property (Module I, Ch. 1), with a bibliographic verification flagged rather than resolved (Module IV, Ch. 3). RQ 2 (gesture-sphoṭa) is answered negatively in its strong form (Module I, Ch. 2). RQ 3 (vākya-level meaning) is answered as qualified-coordinated, confirmed against its own hardest test case (Module I, Ch. 4; Module II, Ch. 4). RQ 4 (hasta/varṇa parallel) is answered as structurally partial (Module I, Ch. 3). RQ 5 (combination versus holistic sign) is answered in favor of holistic, context-resolved signification (Module II, Ch. 1). RQ 6 (lokadharmī/nāṭyadharmī and linguistic status) is answered as satisfying a necessary but not sufficient condition (Module I, Ch. 5). RQ 7 (dhvani versus sphoṭa) is answered in favor of dhvani, as this Part's own flagged synthetic proposal (Module I, Ch. 6). RQ 9 (sāttvika tension) is reported as only partially resolved (Module II, Ch. 2). RQ 10 (fourfold-scheme mapping) is answered negatively as structural claim (Module II, Ch. 3). RQ 11 (growth-point analogue) is answered as genuine but sharply scoped convergence (Module III, Ch. 1–2). RQ 12 (rasa and automatic response) is answered as modest, genuine, explicitly limited support (Module III, Ch. 3–4). RQ 13 (polysemy versus iconicity) is answered in favor of polysemy (Module II, Ch. 1). RQ 14 (trained-spectator competence) is answered as structurally parallel but narrower than linguistic competence (Module II, Ch. 5). RQ 15 (living vocabulary versus fixed notation) is answered as substantially living, within a tradition of mixed self-understanding (Module IV, Ch. 4).</p>
+
+<h3 class="sub-h">6.3 What Unifies These Fifteen Findings</h3>
+<p>This chapter's own observation, offered as interim synthesis rather than final verdict, is that every one of these fifteen findings is qualified rather than flat — no research question in this Part has resolved to an unqualified yes or no, and this chapter reads that pattern itself as a finding: the vaikharī-extension of gesture is real, textually licensed, and historically living, but at every point where this Part has tested a stronger version of the claim (full sphoṭa-status, full combinatorial productivity, full metaphysical confirmation from cognitive science, full uniform tradition-wide self-understanding), the stronger version has not survived scrutiny, while a more precisely bounded version has.</p>
+
+<h3 class="sub-h">6.4 What Remains</h3>
+<p>Module IV's chapters 7 through 40 remain, along with Modules I through III's own remaining chapters 7 through 40 each, before this Part's genuine closing synthesis can be written. This chapter's interim position is offered as a working map of that larger remaining task, not a substitute for it.</p>
+
+<div class="callout warn">
+<span class="callout-tag">Chapter 6 — Interim Position Stated, Not the Closing Synthesis</span>
+All fifteen governing research questions have been advanced across the four modules' first deliveries; every finding is qualified rather than flat, a pattern this chapter reads as itself significant. Part Seven's actual closing synthesis remains reserved for Module IV's fortieth chapter, after all four modules' full forty chapters are complete.
+</div>
+
+<div class="margin-note">Modules I, II, III, and IV each continue with their own Chapters 7 through 40 in subsequent deliveries, at the same depth established across all four opening deliveries. Part Seven's full closing synthesis follows once that work is complete.</div>
+
+</section>
+
+</main>
+
+<footer>
+Śāstrex Vāk · Series A Extended · Part VII of XII, Module IV of IV — First Delivery, Chapters 1–6 of 40 · Cultural Musings Research
+</footer>
 
 </body>
 </html>
+

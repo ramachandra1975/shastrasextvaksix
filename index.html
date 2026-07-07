@@ -1029,6 +1029,248 @@ All fifteen governing research questions have been advanced across the four modu
 <footer>
 Śāstrex Vāk · Series A Extended · Part VII of XII, Module IV of IV — First Delivery, Chapters 1–6 of 40 · Cultural Musings Research
 </footer>
+  <!DOCTYPE html>
+<html lang="sa-Latn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Śāstrex Vāk · Series A Extended · Part VII — Scientific Companion: The Fifteen Research Questions Across Three Disciplines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-void:#0d0906; --bg-panel:#1f160c; --bg-panel-raised:#261b0f;
+  --line-hair:#3a2c18; --gold:#c9a24b; --gold-bright:#e8c878; --gold-dim:#8a6e34;
+  --crimson:#8c2f2f; --crimson-bright:#b8433f; --rust:#a85a2e;
+  --teal:#3f7d6e; --teal-bright:#5fa896;
+  --ink:#e7dcc4; --ink-dim:#b3a480; --ink-faint:#7d7156;
+  --devanagari:'Noto Sans Devanagari', serif; --display:'Cinzel', serif;
+  --body:'Spectral', serif; --accent-serif:'Cormorant Garamond', serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; background:radial-gradient(ellipse at 20% 0%, rgba(140,47,47,0.08), transparent 60%),radial-gradient(ellipse at 80% 100%, rgba(168,90,46,0.07), transparent 55%),var(--bg-void); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.75;}
+::selection{background:var(--gold-dim); color:var(--bg-void);}
+header.masthead{padding:4rem 6vw 2.6rem; border-bottom:1px solid var(--line-hair); text-align:center; background:linear-gradient(180deg, rgba(140,47,47,0.06), transparent);}
+.eyebrow{font-family:var(--display); font-size:0.7rem; letter-spacing:0.32em; text-transform:uppercase; color:var(--rust); margin-bottom:1.2rem;}
+h1.title-devanagari{font-family:var(--devanagari); font-weight:600; font-size:clamp(1.7rem,4.2vw,2.6rem); color:var(--gold-bright); margin:0 0 0.3em;}
+h1.title-latin{font-family:var(--display); font-weight:500; font-size:clamp(0.9rem,2vw,1.15rem); letter-spacing:0.06em; color:var(--ink-dim); margin:0 0 1.2rem; text-transform:uppercase;}
+.subtitle{font-family:var(--accent-serif); font-style:italic; font-size:1.08rem; color:var(--ink-dim); max-width:760px; margin:0 auto 1.1rem; line-height:1.55;}
+.scope-note{max-width:760px; margin:1.4rem auto 0; font-size:0.9rem; color:var(--ink-faint); border-top:1px dashed var(--line-hair); padding-top:1.1rem; text-align:left;}
+
+.module-tabbar-wrap{position:sticky; top:0; z-index:20; background:rgba(13,9,6,0.97); backdrop-filter:blur(8px); border-bottom:1px solid var(--line-hair);}
+.module-tabbar{display:flex; justify-content:center; gap:0.6rem; padding:0.9rem 4vw; flex-wrap:wrap;}
+.module-btn{font-family:var(--display); font-size:0.72rem; letter-spacing:0.05em; color:var(--ink-dim); background:var(--bg-panel); border:1px solid var(--line-hair); border-radius:4px; padding:0.7em 1.2em; cursor:pointer; transition:all .15s;}
+.module-btn:hover{color:var(--gold-bright); border-color:var(--gold-dim);}
+.module-btn.active{color:var(--bg-void); background:var(--gold-bright); border-color:var(--gold-bright); font-weight:600;}
+.module-btn .mnum{opacity:0.7; margin-right:0.4em;}
+
+main{max-width:960px; margin:0 auto; padding:2.5rem 6vw 7rem;}
+.module-panel{display:none;}
+.module-panel.active{display:block; animation:fadein .25s ease;}
+@keyframes fadein{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);}}
+
+.module-intro{border:1px solid var(--gold-dim); border-radius:8px; background:var(--bg-panel); padding:1.6rem 1.8rem; margin-bottom:2.2rem;}
+.module-intro h2{font-family:var(--display); color:var(--gold-bright); font-size:1.3rem; margin:0 0 0.6rem;}
+.module-intro .dn{font-family:var(--devanagari); color:var(--gold); font-size:1.1rem; display:block; margin-bottom:0.5rem;}
+.module-intro p{color:var(--ink-dim); font-size:0.96rem; margin:0 0 0.8em;}
+.module-intro p:last-child{margin-bottom:0;}
+
+.rq-sci-card{border:1px solid var(--line-hair); border-radius:8px; margin:1.3rem 0; padding:1.3rem 1.6rem; background:var(--bg-panel-raised);}
+.rq-sci-head{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.6rem; margin-bottom:0.7rem;}
+.rq-sci-num{font-family:var(--display); font-size:0.68rem; letter-spacing:0.1em; color:var(--crimson-bright); border:1px solid var(--crimson); border-radius:3px; padding:0.2em 0.7em;}
+.verdict{font-family:var(--display); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; border-radius:3px; padding:0.25em 0.7em; white-space:nowrap;}
+.verdict.testable{color:var(--teal-bright); border:1px solid var(--teal);}
+.verdict.partial{color:var(--gold-bright); border:1px solid var(--gold-dim);}
+.verdict.not{color:var(--ink-faint); border:1px solid var(--line-hair);}
+.rq-sci-q{font-family:var(--accent-serif); font-style:italic; font-size:1.05rem; color:var(--gold-bright); margin-bottom:0.7rem; line-height:1.4;}
+.rq-sci-body{font-size:0.94rem; color:var(--ink-dim);}
+.rq-sci-body .paradigm{display:block; margin-top:0.6rem; font-size:0.88rem; color:var(--ink-faint); border-left:2px solid var(--gold-dim); padding-left:0.9rem;}
+.rq-sci-body .paradigm b{color:var(--gold);}
+
+.summary-table{width:100%; border-collapse:collapse; margin:1rem 0 2rem; font-size:0.88rem;}
+.summary-table th{font-family:var(--display); font-size:0.6rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-faint); text-align:left; padding:0.6rem 0.7rem; border-bottom:1px solid var(--gold-dim);}
+.summary-table td{padding:0.6rem 0.7rem; border-bottom:1px solid var(--line-hair); color:var(--ink-dim); vertical-align:top;}
+.summary-table td.rqn{color:var(--gold-bright); font-family:var(--display); font-size:0.75rem; white-space:nowrap;}
+
+footer{border-top:1px solid var(--line-hair); padding:2.2rem 6vw; text-align:center; font-family:var(--display); font-size:0.66rem; letter-spacing:0.1em; color:var(--ink-faint); text-transform:uppercase;}
+@media(max-width:640px){main{padding:2rem 5vw 5rem;} .summary-table{font-size:0.78rem;}}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow">Śāstrex Vāk · Series A Extended · Part VII — Scientific Companion</div>
+  <h1 class="title-devanagari">वैज्ञानिकपरिशिष्टम् — त्रिविधशास्त्रपरीक्षा</h1>
+  <h1 class="title-latin">The Fifteen Research Questions Across Three Disciplinary Modules</h1>
+  <p class="subtitle">A companion analysis, not a replacement for Part Seven's own textual, semiotic, and comparative argument. Each of the fifteen governing research questions is re-examined here from three empirical disciplines in turn — psychological science, medical and physiological science, and neuroscience — with an explicit verdict on whether each question is genuinely testable, only partially testable, or lies outside what any empirical method can confirm or deny.</p>
+  <div class="scope-note">This companion does not claim that empirical convergence validates Part Seven's textual findings, nor that empirical silence undermines them — the two evidentiary domains (textual-hermeneutic and empirical-scientific) answer different kinds of question, a distinction this companion states plainly at every point rather than blurring for the sake of a tidier narrative. Where a research question is substantially metaphysical (a claim about ontological universals, soteriological status, or a real but non-physical ground), that is reported honestly as outside empirical reach, not stretched to fit a study that does not actually address it.</div>
+</header>
+
+<div class="module-tabbar-wrap">
+  <div class="module-tabbar" id="moduleTabbar"></div>
+</div>
+
+<main>
+<div id="modulePanels"></div>
+</main>
+
+<footer>
+Śāstrex Vāk · Series A Extended · Part VII — Scientific Companion, Complete: All Fifteen RQs Across Three Modules · Cultural Musings Research
+</footer>
+
+<script>
+const RQ = [
+  {n:1, q:"Does a documented mechanism license extending vaikharī to cover gesture at all?"},
+  {n:2, q:"Can gesture-sphoṭa (unitary manifested meaning) coherently exist once sound is removed?"},
+  {n:3, q:"Can gesture generate sentence-level (vākya) meaning independent of speech?"},
+  {n:4, q:"Is the hasta/varṇa (gesture/phoneme) inventory parallel exact, partial, or rhetorical?"},
+  {n:5, q:"Do hastas combine like phonemes, or behave as a holistic, context-resolved sign?"},
+  {n:6, q:"Does lokadharmī/nāṭyadharmī show gesture is linguistic in Bhartṛhari's technical sense?"},
+  {n:7, q:"Is abhinaya's meaning-generation better modeled on dhvani (suggestion) or sphoṭa (manifestation)?"},
+  {n:8, q:"Does the tradition name a specific threshold where speech becomes gesture?"},
+  {n:9, q:"Can sāttvika (involuntary) states coherently be a further extension of vaikharī?"},
+  {n:10, q:"Does the fourfold abhinaya scheme parallel the parā–paśyantī–madhyamā–vaikharī descent?"},
+  {n:11, q:"Does gesture-speech integration research empirically support a shared generative source?"},
+  {n:12, q:"Does automatic emotional response research support rasa's claim of direct transmission?"},
+  {n:13, q:"Is nānārtha-hasta genuine polysemy, or context-dependent iconicity?"},
+  {n:14, q:"How does the trained spectator's competence compare to presupposed linguistic competence?"},
+  {n:15, q:"Does regional variation show gesture as a living vocabulary or a fixed notation?"}
+];
+
+const modules = [
+  {
+    id:"psych", label:"Module I · Psychological Sciences", dn:"मनोविज्ञानम्",
+    introTitle:"Module I — Psychological Sciences",
+    introBody:`
+      <p>This module reads all fifteen research questions through cognitive, developmental, perceptual, and social psychology — the disciplines best equipped to test claims about how gesture is produced, perceived, learned, combined, and disambiguated in a living mind, as opposed to how it is defined in classical Sanskrit terms.</p>
+      <p>Three RQs (11, 13, 14) sit almost entirely within this discipline's own home territory and have ready-made experimental paradigms. Four (1, 8, and the metaphysical core of 2 and 7) are not psychological questions at all — they are textual-hermeneutic claims psychology has no instrument to confirm or deny.</p>
+    `,
+    entries:{
+      1:{v:"not", body:`Not a psychological question. Whether the Abhinavabhāratī documents a named mechanism for extending vaikharī's category to gesture is a textual-hermeneutic claim, settled by locating a passage and its argument, not by any experiment. <span class="paradigm"><b>Bearing:</b> Embodied-cognition research (meaning is routinely carried by non-verbal channels) makes the general move psychologically unsurprising, but confirms nothing about the specific classical argument.</span>`},
+      2:{v:"partial", body:`Gestalt perception research is directly relevant to sphoṭa's "unitary, non-compositional grasping" requirement: a trained viewer is documented to grasp a held gesture's meaning as a single whole rather than parsing finger-position, palm-orientation, and wrist-angle as separable sub-units — the same figure/ground holism gestalt psychology documents for meaningful visual configurations generally. <span class="paradigm"><b>Paradigm:</b> Whole-vs-parts recognition tasks (does disrupting one sub-feature of a mudrā degrade recognition catastrophically, the signature of holistic processing, or gracefully, the signature of compositional processing?). <b>Untestable remainder:</b> whether the manifested meaning is a real universal (Bhartṛhari's own metaphysical commitment) rather than a learned category is not a psychological question at all.</span>`},
+      3:{v:"testable", body:`Directly testable. Deaf children's spontaneous "home-sign" systems and established sign languages are documented, in developmental psycholinguistics, to reach full grammatical, sentence-generating status under the right transmission conditions (native acquisition, a community of users, generational transmission) — supplying an exact empirical template for what vākya-level gestural language requires structurally. <span class="paradigm"><b>Paradigm:</b> Compare the documented transmission conditions of classical hasta-vocabulary (adult-taught technical curriculum, not child-acquired native input) against Goldin-Meadow's home-sign criteria; the classical case is predicted, on this paradigm, to fall short of full linguistic status for exactly the reason it lacks native-acquisition transmission.</span>`},
+      4:{v:"testable", body:`Testable via psycholinguistic models comparing closed-class phonological inventories against the hasta inventory's own combinatorial productivity, using standard type/token generativity metrics developed for morphological productivity research. <span class="paradigm"><b>Paradigm:</b> Productivity-ratio analysis — count how many distinct meaning-units each inventory can generate per base unit, the same metric used to compare productive versus unproductive morphological processes in spoken languages.</span>`},
+      5:{v:"testable", body:`Testable via McNeill's own gesture-typology coding scheme, which already formally distinguishes combinatorial (beat, deictic sequences) from holistic (iconic, metaphoric) gesture types, plus priming studies that would show whether one hasta's several senses share the reaction-time signature of a single accessed unit (holistic) or of separately combined units.`},
+      6:{v:"partial", body:`Developmental psychology's iconicity-bootstrapping research (children acquiring iconic signs faster than arbitrary ones, but treating both as fully conventional once fluent) is a genuine, testable parallel to the lokadharmī/nāṭyadharmī distinction. <span class="paradigm"><b>Paradigm:</b> Acquisition-speed comparison between iconic and arbitrary hastas in trainee dancers, mirroring existing sign-language acquisition studies. <b>Untestable remainder:</b> whether satisfying this condition makes gesture "linguistic in Bhartṛhari's technical sense" is a philosophical, not psychological, further step.</span>`},
+      7:{v:"testable", body:`Relevance-theoretic and Gricean pragmatics — well-established experimental psycholinguistics — directly models the cognitive difference between processing an explicit, directly-manifested meaning and inferring a suggested one, including measurable differences in processing effort and time-course. <span class="paradigm"><b>Paradigm:</b> Processing-time studies comparing comprehension of directly iconic hastas against nānārtha-hasta requiring contextual inference — a suggestion-based account predicts measurably greater inferential load for the latter.</span>`},
+      8:{v:"not", body:`Not a psychological question. Whether the Nāṭyaśāstra or its commentaries name a specific textual threshold-moment is resolved by locating a passage, not by any behavioral or cognitive measure.`},
+      9:{v:"partial", body:`Actor-training psychology has a substantial, directly relevant literature: Stanislavski-derived "emotional memory" and affective recall techniques have been studied for whether they produce measurably real, rather than merely performed, emotional states in trained actors. <span class="paradigm"><b>Paradigm:</b> Compare self-reported and behaviorally-coded emotional intensity in actors using affective-recall technique versus untrained mimicry of the same expression. <b>Untestable remainder:</b> whether the resulting state genuinely arises "from citta" in the classical sense, as opposed to being a psychologically well-documented voluntary induction process, is a metaphysical distinction psychology cannot adjudicate.</span>`},
+      10:{v:"partial", body:`Divided-attention and multiple-resource theory in cognitive psychology can test whether an observer processes the four abhinaya channels as simultaneous parallel streams or as a sequential graded progression — directly relevant to whether the fourfold scheme behaves like the Vāk descent's own graded structure. <span class="paradigm"><b>Paradigm:</b> Dual-task interference studies — if attending to āṅgika and vācika simultaneously produces no more interference than attending to either alone, this supports the "parallel channels" reading over "graded descent."</span>`},
+      11:{v:"testable", body:`This is growth-point theory's own home discipline. McNeill's program is itself psycholinguistic, and the shared-origin claim (gesture and speech differentiate from one underlying unit of thought-in-formation) is tested through documented behavioral evidence — gesture-speech synchrony timing, co-occurring disfluency patterns, and children's gesture-speech mismatch as a predictor of upcoming conceptual change. This RQ requires no further disciplinary translation; it is already a psychological research program.`},
+      12:{v:"partial", body:`Psychology of aesthetic emotion — including the documented "paradox of fiction" literature and empathy-versus-sympathy distinctions in audience-response research — bears directly on rasa's claim of relatively direct, non-discursive transmission. <span class="paradigm"><b>Paradigm:</b> Compare audience physiological and self-reported response to a dramatized sorrow-scene against response to real witnessed sorrow; documented "psychological distancing" effects (fiction dampens some threat/distress responses while preserving recognition) offer a real, if partial, empirical handle on rasa's own claim that aesthetic sorrow (karuṇa-rasa) is pleasurable in a way ordinary sorrow is not. <b>Untestable remainder:</b> rasa's own further claim of generalized, spiritually-adjacent aesthetic bliss (ānanda) exceeds what any response study can confirm.</span>`},
+      13:{v:"testable", body:`Directly testable via standard lexical-ambiguity priming paradigms: polysemous senses show faster cross-sense priming (reflecting a shared semantic core) than homonymous senses, which show competition rather than facilitation. <span class="paradigm"><b>Paradigm:</b> Prime a trained viewer with one documented sense of a nānārtha-hasta, then test recognition speed for a second documented sense of the same hasta; facilitation supports polysemy, no effect or interference supports homonymy.</span>`},
+      14:{v:"testable", body:`Perceptual-expertise psychology (the extensively documented chess-master and radiologist paradigms) transfers directly: expert perceivers show faster, more selective, and more configurally-organized recognition than novices for material within their trained domain. <span class="paradigm"><b>Paradigm:</b> Compare gaze patterns and recognition speed for codified hastas between dance-trained (sahṛdaya-equivalent) and untrained viewers — the existing expertise literature predicts exactly the kind of narrower, specially-cultivated competence RQ 14 attributes to the sahṛdaya.</span>`},
+      15:{v:"partial", body:`Skill-transmission and apprenticeship psychology documents how motor and perceptual skills drift, elaborate, and regionally diverge across generations of teacher-to-student transmission even when a shared textual or technical ancestor is maintained. <span class="paradigm"><b>Paradigm:</b> Compare documented drift-patterns in classical dance lineages against documented drift-patterns in other apprenticeship-transmitted skills (craft trades, martial arts) for structural similarity in how "coining," "recognizability," and "correction versus pride" play out.</span>`}
+    }
+  },
+  {
+    id:"medical", label:"Module II · Medical & Physiological Sciences", dn:"शरीरविज्ञानम्",
+    introTitle:"Module II — Medical & Physiological Sciences",
+    introBody:`
+      <p>This module reads all fifteen research questions through physiology, autonomic medicine, and biomechanics — disciplines equipped to test claims about the body's own measurable states (autonomic arousal, hand anatomy, motor timing) but poorly equipped, or entirely unequipped, to test claims about meaning, category-membership, or textual argument.</p>
+      <p>One research question (RQ 9) has an unusually rich, ready-made medical literature — the eight sāttvika bhāvas map almost directly onto documented autonomic nervous system states. Several others (1, 2's metaphysical core, 6, 7, 8, 13, 15) have little or no genuine physiological correlate and are reported here as such rather than stretched to fit.</p>
+    `,
+    entries:{
+      1:{v:"not", body:`No physiological correlate. This is a claim about a textual argument's existence and structure; the body has no measurable state that could confirm or disconfirm it.`},
+      2:{v:"not", body:`No physiological correlate for the manifestation-vs-convention question specifically. The only physiological-adjacent point is that a held mudrā is a static muscular configuration while spoken sound is a dynamic laryngeal-articulatory event — a real biomechanical difference (Chapter 2's own "temporal sequencing" feature) — but this bears on timing, not on whether meaning is manifested or merely conventionally paired.`},
+      3:{v:"partial", body:`Biomechanics of gesture articulation is genuinely relevant to one narrow slice of this question: Kendon's documented gesture-phase structure (preparation, stroke, hold, retraction) shows codified gesture does unfold with its own temporal-articulatory structure, comparable in kind (though not in inventory size) to spoken utterance's own articulatory phases. <span class="paradigm"><b>Paradigm:</b> Motion-capture timing analysis of hasta-phase structure against documented speech-articulation timing. <b>Untestable remainder:</b> whether this structural similarity amounts to sentence-level meaning-generation is a semantic, not biomechanical, question.</span>`},
+      4:{v:"testable", body:`Hand biomechanics sets a genuine, measurable possibility-space for any hasta inventory: the human hand's approximately twenty-seven degrees of freedom constrain how many discriminable static configurations are comfortably producible and reliably distinguishable by an observer, exactly as vocal-tract anatomy constrains the phoneme inventory of any spoken language. <span class="paradigm"><b>Paradigm:</b> Biomechanical modeling of discriminable hand-configuration space, compared against the documented twenty-eight-plus-compound hasta count, to test whether the classical inventory approaches, or falls well short of, the hand's own physical capacity — directly informing how "natural" a closed inventory of this size is.</span>`},
+      5:{v:"partial", body:`Motor-sequencing physiology (how the basal ganglia and premotor cortex chunk sequences of movements into stored units) is a real, testable analogue to whether hasta-sequences are "chunked" in production the way phoneme-sequences are chunked into syllables. <span class="paradigm"><b>Paradigm:</b> EMG and motion-capture chunking analysis of trained performers executing narrative hasta-sequences, looking for the same reduced-transition-cost signature documented for well-learned motor chunks generally.</span>`},
+      6:{v:"not", body:`Little direct physiological bearing. The lokadharmī/nāṭyadharmī distinction is about representational register (natural versus stylized), not about a measurable bodily state; the closest tie is general motor-learning literature on how trained movement becomes more stylized and less naturalistic with practice, which is suggestive but not a direct test of linguistic status.`},
+      7:{v:"not", body:`No physiological correlate. Dhvani versus sphoṭa is a claim about the structure of meaning-generation, not about any measurable bodily process.`},
+      8:{v:"not", body:`No physiological correlate. This is a textual-location question.`},
+      9:{v:"testable", body:`The strongest medical tie in the entire set of fifteen. All eight documented sāttvika bhāvas correspond to specific, named, measurable autonomic and neuromuscular events: sveda (diaphoresis, sympathetic eccrine activation), romāñca (piloerection, sympathetic arrector pili activation), vepathu (tremor, sympathetically-modulated motor-unit firing), svarabheda (laryngeal-muscle tremor under sympathetic arousal), vaivarṇya (pallor, peripheral vasoconstriction), aśru (lacrimation, parasympathetic-mediated), stambha (paralysis/freezing, a documented sympathetic threat-response), and pralaya (syncope, vasovagal parasympathetic overshoot). <span class="paradigm"><b>Paradigm:</b> Skin-conductance, heart-rate-variability, and EMG studies on trained actors performing sāttvika bhāvas via cultivated technique, compared against the same measures during genuine spontaneous emotional arousal — directly testing whether "cultivated" sāttvika expression is physiologically real autonomic activation or surface mimicry without the underlying autonomic signature. Published biofeedback studies on trained performers' voluntary arousal induction are directly transferable to this question.</span>`},
+      10:{v:"partial", body:`Physiological workload measures (heart-rate variability and respiration changes under divided attentional load) can test whether coordinating four simultaneous abhinaya channels imposes measurable physiological cost consistent with parallel processing versus sequential processing, though this sits closer to psychophysiology than to medicine proper. <span class="paradigm"><b>Paradigm:</b> HRV and respiratory-sinus-arrhythmia measurement during single-channel versus four-channel coordinated performance in trained performers.</span>`},
+      11:{v:"partial", body:`EMG synchrony studies between orofacial (speech) and manual (gesture) musculature during spontaneous speech production offer a genuine physiological correlate to growth-point theory's shared-origin claim — tight, sub-second synchrony between a gesture's stroke and its co-occurring stressed syllable is documented and measurable. <span class="paradigm"><b>Paradigm:</b> High-resolution EMG/motion-capture synchrony analysis, already a documented method in gesture-speech integration research, directly transferable here.</span>`},
+      12:{v:"partial", body:`Psychophysiological arousal measures (skin conductance, heart rate, and documented "aesthetic chills" or frisson response) to observed performance offer a real physiological handle on rasa's directness-claim, including the specific and well-documented phenomenon of measurable pleasurable physiological arousal (frisson) occurring during aesthetically sorrowful or tragic content — a plausible physiological correlate for rasa theory's own claim that karuṇa-rasa is pleasurable in a way ordinary sorrow is not. <span class="paradigm"><b>Paradigm:</b> Frisson/chills measurement (piloerection, skin conductance) during sorrow-themed abhinaya performance, compared against measures during real witnessed distress. <b>Untestable remainder:</b> rasa's further claim of spiritually-adjacent aesthetic bliss exceeds any physiological measure's reach.</span>`},
+      13:{v:"not", body:`No direct physiological correlate; polysemy versus iconicity is a semantic distinction, not a bodily one.`},
+      14:{v:"partial", body:`Perceptual-motor efficiency measures (reduced ocular fixation count, reduced muscular micro-adjustment in trained observers) are documented in sports-medicine and applied physiology expertise research and transfer plausibly to trained dance-spectators, though the primary evidence base here belongs more properly to neuroscience (Module III) than to medicine.`},
+      15:{v:"partial", body:`Documented physiological and biomechanical drift in motor-skill transmission across coaching or apprenticeship generations (studied extensively in sports biomechanics and physical therapy) offers a structural, if indirect, physiological analogue to how a gesture vocabulary might drift measurably across dance lineages over generations of embodied transmission.`}
+    }
+  },
+  {
+    id:"neuro", label:"Module III · Neuroscience", dn:"तन्त्रिकाविज्ञानम्",
+    introTitle:"Module III — Neuroscience",
+    introBody:`
+      <p>This module reads all fifteen research questions through cognitive and clinical neuroscience — brain-imaging and lesion-based evidence about how gesture, sign, and observed movement are actually processed neurally. This is, on the documented evidence available, the single richest of the three disciplines for this particular set of questions, with genuinely strong, ready-made paradigms for RQ 3, 9, 11, 13, and 14 specifically.</p>
+      <p>The metaphysical core of RQ 1, 2, 7, and 8 remains outside neuroscience's reach for the same reason it is outside every empirical discipline's reach: a claim about textual argument or about a sign being a real ontological universal is not a claim about neural processing, however sophisticated the imaging.</p>
+    `,
+    entries:{
+      1:{v:"not", body:`No neural correlate. Whether a documented hermeneutic mechanism exists in a twelfth-century Sanskrit commentary is not a question any brain-imaging study addresses.`},
+      2:{v:"partial", body:`fMRI studies of gesture comprehension document substantial overlap between the neural networks recruited for meaningful gesture and for spoken language — including inferior frontal gyrus (Broca's-area-adjacent) and posterior superior temporal sulcus activation for both — supporting the general plausibility of unitary, language-like processing for gesture. <span class="paradigm"><b>Paradigm:</b> Direct comparison of BOLD-response overlap between hasta comprehension and single-word comprehension in the same trained observers. <b>Untestable remainder:</b> shared neural substrate is evidence of shared processing machinery, not evidence that either is a manifested ontological universal in Bhartṛhari's specific technical sense — that claim sits outside what any scan can show.</span>`},
+      3:{v:"testable", body:`Strongly testable, with an existing paradigm already in the literature. Neuroimaging of sign language (Petitto, MacSweeney, and colleagues) documents that fully grammatical sign languages activate the same left-hemisphere perisylvian language network — including Broca's and Wernicke's-homologous regions — as spoken language, provided the sign system is acquired natively and used generatively. <span class="paradigm"><b>Paradigm:</b> Compare neural activation in trained dancers processing codified hasta-sequences against the documented sign-language activation pattern; the existing literature predicts a weaker, more visuospatial (rather than classic perisylvian language-network) activation pattern for adult-taught technical gesture-vocabulary lacking native acquisition, directly informing RQ 3's own "coordinated, not independent" finding.</span>`},
+      4:{v:"partial", body:`Neural sequencing of discrete finite motor/phonological units (basal ganglia and premotor cortex chunking) is documented for phoneme-sequencing; no equivalent neuroimaging study of hasta-sequencing yet exists in the literature, making this a genuine, well-specified open research question rather than an already-answered one. <span class="paradigm"><b>Paradigm:</b> A direct fMRI comparison study, not yet conducted, comparing basal-ganglia and premotor engagement during phoneme-sequence versus hasta-sequence production in matched, trained participants.</span>`},
+      5:{v:"testable", body:`Testable via combinatorial-processing neuroimaging: left-inferior-frontal (Broca's-area) engagement is documented to scale with syntactic combinatorial complexity in spoken language. <span class="paradigm"><b>Paradigm:</b> Test whether hasta narrative-sequences recruit this same combinatorial network at levels comparable to syntax, or instead recruit primarily visuospatial (parietal) networks consistent with additive concatenation rather than true combinatorial (syntax-like) processing — directly testing this cluster's own "closer to concatenation than grammar" finding.</span>`},
+      6:{v:"partial", body:`Neuroimaging of iconicity in sign language (Emmorey and colleagues) documents that iconic signs show additional recruitment of visual/motor simulation regions relative to arbitrary signs early in processing, but that this difference diminishes with conventionalized fluency — both types converge on the same core language-network processing once learned. <span class="paradigm"><b>Paradigm:</b> Directly transferable — compare iconic-hasta versus arbitrary-hasta processing in trained versus novice dancers, predicting the same convergence-with-fluency pattern documented for sign language.</span>`},
+      7:{v:"testable", body:`Neuropragmatics documents a real, testable distinction between direct semantic processing (left-hemisphere, rapid) and inferential/suggested-meaning processing (right-hemisphere and ventromedial prefrontal cortex engagement, slower, more context-dependent) — directly relevant to whether abhinaya's meaning-generation looks neurally more like direct manifestation or like suggestion. <span class="paradigm"><b>Paradigm:</b> Compare neural timing and lateralization for directly-iconic-hasta comprehension against nānārtha-hasta context-dependent resolution; a dhvani-consistent finding would show the documented inferential, right-hemisphere-weighted signature for the latter.</span>`},
+      8:{v:"not", body:`No neural correlate. A named textual threshold-moment is a philological question, not a question about brain processing.`},
+      9:{v:"testable", body:`A strong, directly testable question. The eight sāttvika bhāvas correspond to autonomic-limbic circuitry — amygdala, hypothalamus, periaqueductal gray, and brainstem autonomic nuclei — and documented fMRI studies of trained actors using affective-recall technique show genuine limbic and autonomic-control-region activation during cultivated emotional induction, distinguishable from the comparatively limited limbic engagement of surface mimicry without genuine affective recruitment. <span class="paradigm"><b>Paradigm:</b> fMRI comparison of amygdala/hypothalamic activation in trained performers producing sāttvika bhāvas via cultivated technique versus untrained subjects asked to mimic the same external expression — directly testing whether "cultivated" sāttvika abhinaya is genuine limbic-autonomic activation or surface performance without it.</span>`},
+      10:{v:"testable", body:`Multisensory integration neuroscience (superior temporal sulcus and superior colliculus binding of audiovisual and visuomotor streams) directly tests whether the four abhinaya channels are processed as bound, parallel streams (supporting the "coordinated channels" reading) or show evidence of sequential, stage-like processing (which would lend some support to a graded-descent mapping). <span class="paradigm"><b>Paradigm:</b> Audiovisual-integration fMRI paradigms, already well-established for multisensory speech-gesture research, directly transferable to test simultaneous āṅgika/vācika processing.</span>`},
+      11:{v:"testable", body:`This RQ already has a substantial neuroscience literature of its own: documented fMRI and EEG studies of co-speech gesture show tight temporal coupling between gesture-stroke onset and speech-prosody peaks, with shared activation in left inferior frontal gyrus and basal ganglia timing circuits, directly supporting growth-point theory's shared-origin claim at the neural level. This is the strongest existing neuro-empirical base among all fifteen RQs and requires the least further translation.`},
+      12:{v:"testable", body:`Biological-motion perception (superior temporal sulcus, extrastriate body area) and the fast subcortical amygdala pathway for automatic emotion recognition are well-documented and directly relevant to rasa's directness-claim at the recognition layer. Additionally, documented neuroimaging of aesthetic response to sad or tragic art (activating reward circuitry — ventral striatum, orbitofrontal cortex — alongside, rather than instead of, sorrow-processing regions) offers a genuine, if still partial, neural candidate for rasa theory's specific claim that aesthetic sorrow is pleasurable in a way real sorrow is not. <span class="paradigm"><b>Paradigm:</b> Reward-circuitry activation study during karuṇa-rasa-themed abhinaya viewing in sahṛdaya-trained versus untrained viewers. <b>Untestable remainder:</b> rasa's claim of a distinctively generalized, spiritually-adjacent aesthetic bliss (ānanda) is not confirmable or disconfirmable by any current or foreseeable neuroimaging paradigm.</span>`},
+      13:{v:"testable", body:`Neurolinguistics of lexical ambiguity resolution (Rodd and colleagues) documents a measurable difference between polysemy (graded, overlapping activation in left inferior frontal and posterior temporal regions, reflecting facilitated access to related senses) and homonymy (more discrete competition, greater left-inferior-frontal effort reflecting selection among unrelated senses). <span class="paradigm"><b>Paradigm:</b> Directly transferable fMRI paradigm comparing neural signatures during resolution of a nānārtha-hasta's several senses against the documented polysemy/homonymy contrast in spoken-word processing.</span>`},
+      14:{v:"testable", body:`A strong, ready-made paradigm. Documented perceptual-expertise neuroscience (fusiform and parietal expertise networks in chess masters and radiologists; action-observation network engagement in trained dancers specifically, per Calvo-Merino and colleagues, showing greater premotor and parietal activation in dancers watching movements from their own trained repertoire than in untrained viewers) transfers directly to testing the sahṛdaya's documented specialized competence. <span class="paradigm"><b>Paradigm:</b> Action-observation-network fMRI comparing dance-trained and untrained viewers watching codified hasta-sequences — the existing Calvo-Merino paradigm is directly applicable with no modification beyond stimulus selection.</span>`},
+      15:{v:"not", body:`Little direct neural correlate specific to this question. The closest tie is basal-ganglia-mediated procedural-memory consolidation of motor skill across individual training histories, which speaks to how a single performer's technique stabilizes, not to how a vocabulary drifts across generations of separate teacher-student lineages — a cultural-transmission question outside neuroscience's own unit of analysis.`}
+    }
+  }
+];
+
+const summaryVerdicts = {
+  testable:"Testable", partial:"Partially Testable", not:"Not Empirically Testable"
+};
+
+const tabbar = document.getElementById('moduleTabbar');
+const panels = document.getElementById('modulePanels');
+
+modules.forEach((mod, mi)=>{
+  const btn = document.createElement('button');
+  btn.className = 'module-btn'+(mi===0?' active':'');
+  btn.innerHTML = '<span class="mnum">M'+(mi+1)+'</span>'+mod.label.split('·')[1].trim();
+  btn.onclick = ()=>selectModule(mod.id);
+  tabbar.appendChild(btn);
+
+  const panel = document.createElement('div');
+  panel.className = 'module-panel'+(mi===0?' active':'');
+  panel.id = 'module-'+mod.id;
+
+  let cardsHtml = '';
+  RQ.forEach(rq=>{
+    const entry = mod.entries[rq.n];
+    cardsHtml += `
+      <div class="rq-sci-card">
+        <div class="rq-sci-head">
+          <span class="rq-sci-num">RQ ${rq.n}</span>
+          <span class="verdict ${entry.v}">${summaryVerdicts[entry.v]}</span>
+        </div>
+        <div class="rq-sci-q">${rq.q}</div>
+        <div class="rq-sci-body">${entry.body}</div>
+      </div>
+    `;
+  });
+
+  panel.innerHTML = `
+    <div class="module-intro">
+      <h2>${mod.introTitle}<span class="dn">${mod.dn}</span></h2>
+      ${mod.introBody}
+    </div>
+    ${cardsHtml}
+  `;
+  panels.appendChild(panel);
+});
+
+function selectModule(id){
+  document.querySelectorAll('.module-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.module-panel').forEach(p=>p.classList.remove('active'));
+  const idx = modules.findIndex(m=>m.id===id);
+  document.querySelectorAll('.module-btn')[idx].classList.add('active');
+  document.getElementById('module-'+id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
 
 </body>
 </html>

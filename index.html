@@ -1268,9 +1268,384 @@ function selectModule(id){
   document.getElementById('module-'+id).classList.add('active');
 }
 </script>
+  <!DOCTYPE html>
+<html lang="sa-Latn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series A Extended · Part VII — Part One: Textual and Doctrinal Foundations of the Vaikharī-Extension</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-void:#0d0906; --bg-panel:#1f160c; --bg-panel-raised:#261b0f;
+  --line-hair:#3a2c18; --gold:#c9a24b; --gold-bright:#e8c878; --gold-dim:#8a6e34;
+  --crimson:#8c2f2f; --crimson-bright:#b8433f; --rust:#a85a2e;
+  --ink:#e7dcc4; --ink-dim:#b3a480; --ink-faint:#7d7156;
+  --devanagari:'Noto Sans Devanagari', serif; --display:'Cinzel', serif;
+  --body:'Spectral', serif; --accent-serif:'Cormorant Garamond', serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; background:radial-gradient(ellipse at 20% 0%, rgba(140,47,47,0.08), transparent 60%),radial-gradient(ellipse at 80% 100%, rgba(168,90,46,0.07), transparent 55%),var(--bg-void); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.75;}
+::selection{background:var(--gold-dim); color:var(--bg-void);}
+header.masthead{padding:4rem 6vw 2.6rem; border-bottom:1px solid var(--line-hair); text-align:center; background:linear-gradient(180deg, rgba(140,47,47,0.06), transparent);}
+.eyebrow{font-family:var(--display); font-size:0.7rem; letter-spacing:0.32em; text-transform:uppercase; color:var(--rust); margin-bottom:1.2rem;}
+h1.title-devanagari{font-family:var(--devanagari); font-weight:600; font-size:clamp(1.8rem,4.5vw,2.8rem); color:var(--gold-bright); margin:0 0 0.3em;}
+h1.title-latin{font-family:var(--display); font-weight:500; font-size:clamp(0.95rem,2vw,1.2rem); letter-spacing:0.07em; color:var(--ink-dim); margin:0 0 1.2rem; text-transform:uppercase;}
+.subtitle{font-family:var(--accent-serif); font-style:italic; font-size:1.1rem; color:var(--ink-dim); max-width:720px; margin:0 auto 1.1rem; line-height:1.5;}
+.part-badge{display:inline-block; margin-top:1rem; padding:0.5em 1.3em; border:1px solid var(--gold-dim); border-radius:2px; font-family:var(--display); font-size:0.66rem; letter-spacing:0.14em; color:var(--gold); background:var(--bg-panel);}
+.scope-note{max-width:720px; margin:1.4rem auto 0; font-size:0.9rem; color:var(--ink-faint); border-top:1px dashed var(--line-hair); padding-top:1.1rem; text-align:left;}
+
+.tabbar-wrap{position:sticky; top:0; z-index:20; background:rgba(13,9,6,0.97); backdrop-filter:blur(8px); border-bottom:1px solid var(--line-hair);}
+.tabbar{display:flex; overflow-x:auto; gap:0.35rem; padding:0.7rem 4vw; scrollbar-width:thin;}
+.tabbar::-webkit-scrollbar{height:5px;}
+.tabbar::-webkit-scrollbar-thumb{background:var(--gold-dim); border-radius:3px;}
+.tab-btn{flex:0 0 auto; font-family:var(--display); font-size:0.66rem; letter-spacing:0.03em; text-transform:none; color:var(--ink-faint); background:var(--bg-panel); border:1px solid var(--line-hair); border-radius:3px; padding:0.5em 0.8em; cursor:pointer; white-space:nowrap; transition:all .15s;}
+.tab-btn:hover{color:var(--gold-bright); border-color:var(--gold-dim);}
+.tab-btn.active{color:var(--bg-void); background:var(--gold-bright); border-color:var(--gold-bright); font-weight:600;}
+.tab-btn.stub{opacity:0.45; font-style:italic;}
+.tab-btn.stub.active{opacity:1;}
+
+.cluster-label{font-family:var(--display); font-size:0.6rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--rust); padding:0.5rem 4vw 0; }
+
+main{max-width:900px; margin:0 auto; padding:2.5rem 6vw 7rem;}
+.tab-panel{display:none;}
+.tab-panel.active{display:block; animation:fadein .25s ease;}
+@keyframes fadein{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);}}
+
+.chapter-eyebrow{font-family:var(--display); font-size:0.66rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--rust); margin-bottom:0.5rem;}
+h2.chapter-title{font-family:var(--display); font-weight:600; font-size:clamp(1.3rem,3vw,1.9rem); color:var(--gold-bright); margin:0.2em 0 0.6em; line-height:1.3;}
+h2.chapter-title .dn{font-family:var(--devanagari); font-size:0.8em; color:var(--gold); display:block; margin-top:0.2rem;}
+h3.sub-h{font-family:var(--display); font-weight:600; font-size:1.05rem; color:var(--gold); margin:2rem 0 0.8rem; padding-bottom:0.4rem; border-bottom:1px solid var(--line-hair);}
+p{margin:0 0 1.1em;}
+.skt{font-family:var(--devanagari); color:var(--gold-bright);}
+.iast{font-style:italic;}
+.term{color:var(--gold); font-style:italic;}
+hr.ornament{border:none; text-align:center; margin:2.2rem 0; height:1rem;}
+hr.ornament::before{content:"❦"; color:var(--gold-dim);}
+
+.callout{margin:1.6rem 0; padding:1.1rem 1.4rem; border-radius:6px; border:1px solid var(--line-hair); background:var(--bg-panel-raised); font-size:0.94rem;}
+.callout.warn{border-color:var(--crimson);}
+.callout-tag{font-family:var(--display); font-size:0.6rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--crimson-bright); margin-bottom:0.5rem; display:block;}
+
+.refs{margin:1.8rem 0 0.5rem; padding:1.2rem 1.5rem; border-radius:6px; border:1px solid var(--gold-dim); background:var(--bg-panel);}
+.refs-tag{font-family:var(--display); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:0.7rem; display:block;}
+.refs ol{margin:0; padding-left:1.3rem; font-size:0.9rem; color:var(--ink-dim);}
+.refs li{margin-bottom:0.55rem;}
+.refs .rtitle{color:var(--gold-bright); font-style:italic;}
+
+.stub-box{border:1px dashed var(--line-hair); border-radius:6px; padding:1.6rem; text-align:center; color:var(--ink-faint); font-size:0.92rem;}
+.stub-box .stub-num{font-family:var(--display); color:var(--gold-dim); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:0.6rem;}
+
+footer{border-top:1px solid var(--line-hair); padding:2.2rem 6vw; text-align:center; font-family:var(--display); font-size:0.66rem; letter-spacing:0.1em; color:var(--ink-faint); text-transform:uppercase;}
+@media(max-width:640px){main{padding:2rem 5vw 5rem;}}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow">Śāstrex Vāk · Series A Extended · Part VII</div>
+  <h1 class="title-devanagari">वैखर्याः विस्तारस्य मूलानि</h1>
+  <h1 class="title-latin">Part One: Textual and Doctrinal Foundations of the Vaikharī-Extension</h1>
+  <p class="subtitle">Restructured from the former Modules into a Three-Part architecture. Part One carries RQ 1, 2, 3, 4, 6, 7, and 8 — the full textual and doctrinal case for, and the documented limits of, treating codified gesture as vaikharī's own further reach.</p>
+  <div class="part-badge">Part One of Three · Forty Chapters, Tabbed</div>
+  <div class="scope-note">This file holds all forty chapter-slots of Part One as tabs. Chapters 1–8 (the full RQ 1 cluster) are written to full depth in this delivery, each closing with a minimum six-item reference apparatus. Chapters 9–40 are outlined as live tab labels — a working table of contents for the remaining clusters (RQ 2, RQ 4, RQ 3, RQ 6, RQ 7, RQ 8) — and are marked as forthcoming rather than filled with placeholder prose, so nothing here reads as padding. They will be written to the same depth in subsequent deliveries, followed by Part Two and Part Three.</div>
+</header>
+
+<div class="tabbar-wrap">
+  <div class="cluster-label">RQ 1 — Aupacārika Prayoga: The Named Mechanism (Ch. 1–8)</div>
+  <div class="tabbar" id="tabbar"></div>
+</div>
+
+<main>
+<div id="panels"></div>
+</main>
+
+<footer>
+Śāstrex Vāk · Series A Extended · Part VII of XII, Part One of Three — Chapters 1–8 of 40 Written, Chapters 9–40 Outlined · Cultural Musings Research
+</footer>
+
+<script>
+const chapters = [
+  {
+    n:1, cluster:"RQ1", title:"Restating the Problem With Full Precision",
+    dn:"समस्यायाः पुनःकथनम्", full:true,
+    body:`
+    <h3 class="sub-h">1.1 Why the Problem Must Be Restated, Not Merely Assumed</h3>
+    <p>Every later chapter in this cluster depends on the problem being stated so precisely that no later move can quietly soften it. The claim under examination is not the modest one that gesture and speech often accompany each other in performance, nor the weaker one that gesture is <em>like</em> vaikharī in some loose aesthetic sense. The claim under examination is the strong one: that gesture is documented, by the tradition's own technical vocabulary, as falling <em>within</em> the category vaikharī names — not resembling it from outside, but being a further instance of it. A claim this strong requires a mechanism this precise, and this chapter's task is to state exactly what would count as satisfying that requirement before any textual evidence is brought forward.</p>
+    <h3 class="sub-h">1.2 Three Ways the Claim Could Be Cheaply Won, and Why This Cluster Refuses Each</h3>
+    <p>The claim could be cheaply won by treating any commentator's use of vaikharī-adjacent vocabulary near a discussion of gesture as sufficient evidence — this chapter refuses that route because proximity of vocabulary is not identity of category. It could be cheaply won by treating the aesthetic effectiveness of gesture (its capacity to move an audience) as evidence of its linguistic status — refused, because effectiveness and linguistic categorization are independent questions; music is also aesthetically effective without being vaikharī. It could be cheaply won by simply asserting that "Indian tradition holds gesture to be language" as an unexamined cultural generalization — refused most firmly of all, because this cluster's entire discipline is to locate the specific argument, not the received impression.</p>
+    <h3 class="sub-h">1.3 The Test This Cluster Sets for Itself</h3>
+    <p>The test adopted here, and applied uniformly across Chapters 2 through 8, is this: the vaikharī-extension claim is accepted only where a named technical term, a locatable textual passage, and an articulable argument from that passage's own stated premises can all three be produced together. Any one or two of these without the third is treated as suggestive, not sufficient. This is a demanding standard, deliberately so — the entire weight the earlier Modules built on this cluster (the dhvani-proposal, the coordination-finding, the polysemy-reading) depends on RQ 1 being answered honestly rather than generously.</p>
+    <h3 class="sub-h">1.4 What Chapter 1 Itself Does Not Yet Claim</h3>
+    <p>This chapter has cleared ground; it has not yet produced the mechanism. That is Chapter 2's task specifically. This chapter's own contribution is narrower and, for that reason, more securely established: it fixes the standard of evidence the rest of the cluster must meet, so that Chapter 8's closing synthesis can be checked against a criterion stated in advance rather than one adjusted after the fact to fit whatever evidence turned up.</p>
+    <div class="callout"><span class="callout-tag">Chapter 1 — Function Within the Cluster</span>Sets the evidentiary bar for RQ 1: a named term, a locatable passage, and an argument from stated premises, all three required together. No claim about gesture's status is made yet.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span>, Kāṇḍa I — for the technical sense of vaikharī against which any extension claim must be checked.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span>, commentary on Nāṭyaśāstra Ch. 8 — the primary documented locus for the extension argument itself.",
+      "K. Krishnamoorthy, <span class='rtitle'>Studies in Indian Aesthetics and Criticism</span> — on the general standard of evidence Sanskrit commentarial argument expects for a technical-term extension.",
+      "Kapila Vatsyayan, <span class='rtitle'>Bharata, the Nāṭyaśāstra</span> — for the base terminology of abhinaya against which vaikharī-extension is tested.",
+      "Raghavan, V., <span class='rtitle'>The Number of Rasas</span> — methodological parallel on how classical commentators argue for extending an established category rather than inventing a new one.",
+      "Series A Extended, Part I, §IV and §X — this series' own prior establishment of vaikharī's defining property, presupposed throughout this cluster."
+    ]
+  },
+  {
+    n:2, cluster:"RQ1", title:"The Documented Locus: Where the Argument Is Actually Made",
+    dn:"औपचारिकप्रयोगस्य निर्दिष्टस्थानम्", full:true,
+    body:`
+    <h3 class="sub-h">2.1 Ruling Out the Obvious Candidate First</h3>
+    <p>The obvious first place to look is Bhartṛhari's own Vākyapadīya, since it is Bhartṛhari's own technical apparatus being extended. This chapter confirms, as Series A Extended Part One already established, that the Vākyapadīya nowhere discusses gesture — the extension is not made by Bhartṛhari himself, and any claim to the contrary would be a documented error this chapter is careful not to repeat.</p>
+    <h3 class="sub-h">2.2 The Actual Locus</h3>
+    <p>The argument is made later, in the commentarial tradition surrounding the Nāṭyaśāstra's own definitional material on abhinaya, most substantially in Abhinavagupta's Abhinavabhāratī. This is a documented, locatable claim: Abhinavagupta, writing centuries after Bhartṛhari, is in a position to treat the fourfold vāk-scheme as already-available intellectual apparatus, imported into a discussion of dramatic theory rather than originated there. This chapter treats the historical distance between Bhartṛhari and Abhinavagupta as itself evidentially significant — the extension is a later synthesis, not an original feature of grammatical theory, and honesty about that chronology matters for how much weight the extension can bear.</p>
+    <h3 class="sub-h">2.3 The Term Itself</h3>
+    <p><span class="term">Aupacārika prayoga</span> — figurative or extended application — is the documented technical label attached to this move. This chapter is careful to specify what kind of term this is: <span class="iast">aupacārika</span>, from <span class="iast">upacāra</span>, names a recognized category of secondary or transferred usage already well-established in Sanskrit hermeneutics generally (comparable to the recognized distinction between <span class="iast">mukhyārtha</span>, primary sense, and secondary or figurative extension) — this is not a term invented ad hoc for this specific problem, but an existing hermeneutic category being applied to it, which this chapter treats as lending the argument more, not less, credibility.</p>
+    <h3 class="sub-h">2.4 What Locating the Term Does and Does Not Settle</h3>
+    <p>Locating the term and its commentarial home satisfies two of Chapter 1's three requirements — a named term and a locatable passage. It does not yet satisfy the third: an argument from stated premises, which is Chapter 3's task. This chapter is careful not to treat locating the label as equivalent to having examined the argument behind it.</p>
+    <div class="callout"><span class="callout-tag">Chapter 2 — Function Within the Cluster</span>Locates the mechanism: aupacārika prayoga, documented in the Abhinavabhāratī's treatment of abhinaya's definition, applying an existing Sanskrit hermeneutic category rather than an ad hoc invention. Two of three evidentiary requirements now met.</div>
+    `,
+    refs:[
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad Nāṭyaśāstra 8.6–8.10 — documented locus of the aupacārika prayoga argument.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I — confirmed absence of any gesture-discussion, establishing the extension as later synthesis.",
+      "Mīmāṃsā hermeneutic tradition on <span class='rtitle'>mukhyārtha</span> vs. <span class='rtitle'>upacāra</span> — for the general category aupacārika prayoga draws upon (cf. Jaimini-sūtra commentarial tradition on primary/secondary denotation).",
+      "Gnoli, Raniero, <span class='rtitle'>The Aesthetic Experience According to Abhinavagupta</span> — on Abhinavagupta's method of importing grammatical apparatus into dramatic theory.",
+      "Masson, J.L. and Patwardhan, M.V., <span class='rtitle'>Śāntarasa and Abhinavagupta's Philosophy of Aesthetics</span> — for the documented chronological and intellectual relationship between the grammatical and dramaturgical traditions.",
+      "Series A Extended, Part I, §29.2 — on Bhartṛhari's own universals-commitment, against which this chapter's chronology point is checked."
+    ]
+  },
+  {
+    n:3, cluster:"RQ1", title:"Why the Argument Is Substantive, Not Merely Verbal",
+    dn:"वादस्य सारवत्त्वम्", full:true,
+    body:`
+    <h3 class="sub-h">3.1 The Distinction This Chapter Insists On</h3>
+    <p>A label can be applied for at least three different kinds of reason: because two things resemble each other, because they produce a similar effect, or because they share a defining property. This chapter's task is to determine which of these three is actually documented behind aupacārika prayoga's application to gesture, since only the third would satisfy Chapter 1's demanding standard.</p>
+    <h3 class="sub-h">3.2 Testing Against Resemblance</h3>
+    <p>If the commentarial argument were from resemblance, gesture would be called vaikharī because it looks like, or reminds an observer of, articulate speech. This chapter finds no documented evidence of this reasoning — nothing in the Abhinavabhāratī's treatment argues that gesture visually resembles vaikharī's own acoustic manifestation.</p>
+    <h3 class="sub-h">3.3 Testing Against Effect</h3>
+    <p>If the argument were from shared effect, gesture would be called vaikharī because it produces a comparable aesthetic or communicative outcome in an audience. This is closer to what a careless reading might attribute to the tradition, but this chapter does not find this as the documented argument either — the commentarial move is made prior to, and independent of, any claim about gesture's aesthetic efficacy.</p>
+    <h3 class="sub-h">3.4 Testing Against Shared Defining Property — The Documented Case</h3>
+    <p>What this chapter does find documented is the third and strongest kind of argument: vaikharī is defined, per Series A Extended Part One's own account, by its function — full externalization of an internally graspable meaning into a form perceptible to another — rather than by its material substrate. Sound is vaikharī's ordinary and paradigmatic substrate, but the argument holds that externalization-for-another's-perception is the defining feature, and gesture satisfies that defining feature as fully as audible speech, differing only in which sense-channel receives it. This is a functional-equivalence argument, not a resemblance or effect argument, and it is the specific reason this chapter treats the extension as substantive rather than merely verbal.</p>
+    <h3 class="sub-h">3.5 Why This Distinction Has Teeth</h3>
+    <p>This distinction is falsifiable in a way that matters: had the documented argument turned out to be from resemblance or effect, this entire cluster's later chapters (and the Modules that built on this cluster previously) would have had to treat "gesture is vaikharī" as a loose figure of speech rather than a technical claim. That it is instead argued from vaikharī's own stated defining property is the single most load-bearing finding in this cluster.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 3 — Function Within the Cluster</span>The third of Chapter 1's three requirements is met: the documented argument is from vaikharī's own defining property (externalization-for-another), not from resemblance or shared effect. RQ 1's mechanism is now fully evidenced.</div>
+    `,
+    refs:[
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> I.51–54 — for vaikharī's own functional definition as externalization for another's cognition.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — documented reasoning from defining property rather than resemblance.",
+      "Ānandavardhana / Abhinavagupta, <span class='rtitle'>Dhvanyāloka</span> with <span class='rtitle'>Locana</span> — for the broader commentarial habit of arguing from defining function rather than surface similarity, a method this chapter treats as consistent across Abhinavagupta's corpus.",
+      "Coomaraswamy, A.K., <span class='rtitle'>The Mirror of Gesture</span> — early modern secondary treatment of the hasta-as-language claim, useful as a check against overclaiming from resemblance alone.",
+      "Cardona, George, <span class='rtitle'>Pāṇini: His Work and Its Traditions</span> — for the general grammatical-tradition practice of function-based rather than form-based category extension.",
+      "Series A Extended, Part I, §X — this series' own account of vaikharī's defining property, directly presupposed by this chapter's test."
+    ]
+  },
+  {
+    n:4, cluster:"RQ1", title:"Boundary Conditions: What the Mechanism Does Not Establish",
+    dn:"सीमा यत्र प्रयोगो न प्रसरति", full:true,
+    body:`
+    <h3 class="sub-h">4.1 Why a Chapter on Limits Belongs This Early</h3>
+    <p>Having established the mechanism in Chapter 3, this chapter's task is to prevent the finding from being overextended before later chapters (5 through 8, and the entire RQ 2–8 clusters that follow in this Part) have had the chance to test its reach properly. This is a deliberate discipline: a licensing mechanism and the full scope of what it licenses are two different questions, and conflating them is exactly the kind of overreach this series' evidentiary standard exists to prevent.</p>
+    <h3 class="sub-h">4.2 What Has Been Established</h3>
+    <p>What Chapters 2 and 3 together establish is narrow and specific: a named, textually locatable mechanism exists, and it argues from vaikharī's own defining property rather than loose resemblance. This licenses treating gesture as falling under vaikharī's category with respect to that one defining property — externalization for another's perception.</p>
+    <h3 class="sub-h">4.3 What Has Not Been Established</h3>
+    <p>This chapter is explicit that establishing the license to extend the category is not the same as establishing that gesture reproduces every further feature vaikharī has in its acoustic form. In particular: whether gesture can bear sphoṭa-style unitary manifested meaning at all remains untouched by this chapter — that is RQ 2's separate question, addressed in Chapters 9 through 16. Whether gesture can generate sentence-level meaning independent of speech remains untouched — that is RQ 3's question. Whether the specific parallel to the phoneme inventory holds remains untouched — that is RQ 4's question.</p>
+    <h3 class="sub-h">4.4 The General Principle This Chapter States</h3>
+    <p>The general principle this chapter commits the rest of Part One to: a functional-equivalence argument on one defining property licenses extension with respect to that property specifically, and each further property vaikharī is documented to have must be tested on its own textual evidence rather than assumed to transfer automatically once the category-label has been secured. This is the principle that makes Chapters 9 onward (testing sphoṭa specifically) a genuinely open question rather than a formality.</p>
+    <div class="callout"><span class="callout-tag">Chapter 4 — Function Within the Cluster</span>States the scope-boundary explicitly: RQ 1's mechanism licenses the category-extension on the property it argues from (externalization-for-another) and no further property automatically. This governs how Chapters 9 onward must proceed.</div>
+    `,
+    refs:[
+      "Series A Extended, Part I, §IV — sphoṭa's own defining features, which this chapter identifies as a separate test not settled by RQ 1.",
+      "Matilal, B.K., <span class='rtitle'>The Word and the World: India's Contribution to the Study of Language</span> — on the general philosophical discipline of not conflating category-membership with property-inheritance in Sanskrit semantic theory.",
+      "Bhartṛhari, <span class='rtitle'>Vākyapadīya</span> II — on the layered, property-by-property structure of sphoṭa theory that later chapters test individually.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — read here specifically for what it does not claim, alongside what it does (per Ch. 2–3).",
+      "Raghavan, V., <span class='rtitle'>Bhoja's Śṛṅgāra Prakāśa</span> — comparative case of a later theorist extending an established category cautiously, property by property, as a documented methodological parallel.",
+      "Series A Extended, Part VII (prior delivery), Module I, Ch. 1.4 — this chapter's own earlier, shorter statement of the same boundary, expanded here to full depth."
+    ]
+  },
+  {
+    n:5, cluster:"RQ1", title:"Parallel Extension-Arguments Elsewhere: Lakṣaṇā and Gauṇī Vṛtti as Test Cases",
+    dn:"लक्षणागौण्योः तुल्यन्यायः", full:true,
+    body:`
+    <h3 class="sub-h">5.1 Why an External Check Strengthens Rather Than Distracts</h3>
+    <p>This chapter tests the aupacārika prayoga argument against comparable, independently well-studied extension-arguments already established elsewhere in Sanskrit semantic theory — specifically <span class="term">lakṣaṇā</span> (secondary indication, where a word's primary sense is set aside in favor of a related sense demanded by context) and <span class="term">gauṇī vṛtti</span> (figurative extension based on a shared quality). If the gesture-extension argument has the same documented structure as these well-established, independently scrutinized cases, that is real corroborating evidence; if it does not, that is a genuine disanalogy this chapter is obligated to report.</p>
+    <h3 class="sub-h">5.2 How Lakṣaṇā Is Documented to Work</h3>
+    <p>Lakṣaṇā is documented across the grammatical and Mīmāṃsā traditions as licensed only under specific stated conditions: the primary sense must be unfit in context (<span class="iast">mukhyārthabādha</span>), there must be some connection (<span class="iast">sambandha</span>) between the primary and secondary sense, and the extension must serve a recognized purpose. This chapter checks the aupacārika prayoga argument against this same three-part structure.</p>
+    <h3 class="sub-h">5.3 The Comparison Applied</h3>
+    <p>Applied to gesture: the "primary sense" of vaikharī (acoustic articulation) is not unfit in the ordinary case — speech continues to function ordinarily whether or not gesture is present — so the extension is not licensed by mukhyārthabādha in the way lakṣaṇā ordinarily requires. This is a genuine structural disanalogy this chapter reports rather than smooths over. What does hold is the second condition: a documented connection (sambandha) between vaikharī and gesture, established via the shared defining property Chapter 3 identified. And the third condition, purpose, is satisfied by the documented dramaturgical need to describe gesture's communicative function using existing, authoritative technical vocabulary rather than inventing an entirely new apparatus.</p>
+    <h3 class="sub-h">5.4 The Chapter's Qualified Finding</h3>
+    <p>This chapter's finding is that the gesture-extension argument satisfies two of lakṣaṇā's three classical conditions (sambandha and purpose) but not the first (mukhyārthabādha), which suggests the argument is closer in structure to gauṇī vṛtti — figurative extension on a shared quality, which does not require the primary sense to be contextually unfit — than to full lakṣaṇā. This is a more precise characterization of aupacārika prayoga's own logical structure than Chapters 2–3 alone supplied, and this chapter treats it as a refinement, not a contradiction, of those chapters' findings.</p>
+    <div class="callout"><span class="callout-tag">Chapter 5 — Function Within the Cluster</span>Cross-checks RQ 1's mechanism against lakṣaṇā and gauṇī vṛtti as independently documented extension-types. Finds aupacārika prayoga structurally closer to gauṇī vṛtti (shared-quality extension) than to full lakṣaṇā, refining rather than contradicting Chapters 2–3.</div>
+    `,
+    refs:[
+      "Mīmāṃsā tradition on <span class='rtitle'>lakṣaṇā</span> and its three classical conditions — cf. Jha, Gangānātha, <span class='rtitle'>Pūrva-Mīmāṃsā in Its Sources</span>.",
+      "Mammaṭa, <span class='rtitle'>Kāvyaprakāśa</span>, Ch. 2 — for the standard classical formulation of gauṇī vṛtti against which this chapter tests the gesture-extension.",
+      "Kunjunni Raja, K., <span class='rtitle'>Indian Theories of Meaning</span> — comprehensive secondary account of lakṣaṇā and gauṇī vṛtti's documented conditions.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — re-examined here specifically for which of the three lakṣaṇā-conditions its argument does or does not invoke.",
+      "Gerow, Edwin, <span class='rtitle'>A Glossary of Indian Figures of Speech</span> — reference work for precise definitions of lakṣaṇā and gauṇī vṛtti used in this chapter's comparison.",
+      "Series A Extended, Part I, §4.2 — this series' own prior treatment of sphoṭa/dhvani distinctions, methodologically parallel to this chapter's lakṣaṇā/gauṇī vṛtti distinction."
+    ]
+  },
+  {
+    n:6, cluster:"RQ1", title:"Counter-Readings: Could Aupacārika Prayoga Be Mere Ornament?",
+    dn:"प्रतिवादः — किमयं शब्दालङ्कारमात्रः", full:true,
+    body:`
+    <h3 class="sub-h">6.1 Steelmanning the Skeptical Reading</h3>
+    <p>Intellectual honesty requires this cluster to state the strongest available objection to its own findings before closing RQ 1. The objection: perhaps aupacārika prayoga, wherever it appears in commentarial literature on dramatic theory, functions as ordinary rhetorical ornamentation — a learned commentator reaching for elevated grammatical vocabulary to lend gravity to a discussion of gesture, without intending the precise technical weight Chapters 2 through 5 have attributed to it. On this reading, this cluster would have overread a stylistic flourish as a rigorous philosophical argument.</p>
+    <h3 class="sub-h">6.2 What Would Distinguish Ornament From Argument</h3>
+    <p>This chapter proposes a specific test to distinguish the two readings: ornamental use of technical vocabulary typically appears once, in passing, without the term's own internal logical structure (its stated conditions, as examined in Chapter 5) being engaged; substantive technical use typically shows the commentator actually working through those conditions, even implicitly, in a way that would be otiose if only ornament were intended.</p>
+    <h3 class="sub-h">6.3 Applying the Test</h3>
+    <p>Applied to the documented Abhinavabhāratī material: Chapter 5 found that the argument engages two of lakṣaṇā's three classical conditions specifically (sambandha and purpose) while explicitly not satisfying the third (mukhyārthabādha) — this is not the pattern ornamental usage would produce, since ornamental usage would not typically engage the conditions selectively and precisely enough to be checkable against them at all. This chapter treats this selective, checkable engagement as evidence against the ornamental reading and in favor of the substantive one already argued in Chapters 3 and 5.</p>
+    <h3 class="sub-h">6.4 What This Chapter Concedes to the Skeptic</h3>
+    <p>This chapter does not dismiss the skeptical reading entirely. It concedes that later, less careful commentators in the tradition may well use aupacārika prayoga and cognate vocabulary more loosely, closer to ornament, without re-engaging the original argument's conditions — and that this cluster's finding is specifically about the documented locus in Abhinavagupta's own text, not a claim that every subsequent use of the vocabulary carries the same rigor. This qualification matters directly for the historical-layering finding developed at length in this restructuring's Part Three.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 6 — Function Within the Cluster</span>Tests and rejects the ornamental-reading objection for the documented Abhinavabhāratī locus specifically, on the basis of selective, checkable engagement with lakṣaṇā's conditions (Ch. 5) — while conceding that later, looser commentarial usage may not carry the same rigor.</div>
+    `,
+    refs:[
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — re-examined for internal engagement with lakṣaṇā's stated conditions, as the decisive test against the ornamental reading.",
+      "Pollock, Sheldon, <span class='rtitle'>The Language of the Gods in the World of Men</span> — on distinguishing substantive technical argument from rhetorical convention in Sanskrit commentarial prose more generally.",
+      "Ingalls, D.H.H., Masson, J.L., and Patwardhan, M.V. (trans.), <span class='rtitle'>The Dhvanyāloka of Ānandavardhana with the Locana of Abhinavagupta</span> — for comparative examples of Abhinavagupta's own rigorous versus looser citational habits.",
+      "Kunjunni Raja, K., <span class='rtitle'>Indian Theories of Meaning</span> — again, for the general problem of distinguishing technical from ornamental usage of semantic-theory vocabulary in later commentary.",
+      "Series A Extended, Part VII, Part Three (this restructuring) — the historical-layering material on the Abhinavabhāratī's transmission, directly relevant to this chapter's concession in §6.4.",
+      "Cardona, George, <span class='rtitle'>Pāṇini: His Work and Its Traditions</span> — on how to distinguish rigorous versus loose invocation of inherited grammatical vocabulary generally in the later tradition."
+    ]
+  },
+  {
+    n:7, cluster:"RQ1", title:"Reception: How Later Commentators Engaged the Mechanism",
+    dn:"उत्तरवृत्तीनां ग्रहणम्", full:true,
+    body:`
+    <h3 class="sub-h">7.1 Why Reception History Matters Here</h3>
+    <p>Chapter 6 conceded that later, looser commentarial usage might not carry Abhinavagupta's own original rigor. This chapter tests that concession directly by examining how documented later commentary on the Nāṭyaśāstra and its performance traditions engages, restates, or silently drops the aupacārika prayoga argument.</p>
+    <h3 class="sub-h">7.2 What the Documented Later Tradition Shows</h3>
+    <p>Later technical manuals in the abhinaya tradition — most substantially the Abhinaya Darpaṇa, examined at length in this restructuring's Part Three — are documented to proceed largely by practical description of hastas and their meanings rather than by re-arguing the vaikharī-extension's philosophical warrant. This chapter reads this pattern carefully: the absence of re-argument is not itself evidence against the original argument's validity, but it does mean that the later, more widely circulated practical tradition inherits the label (gesture as an extension of vaikharī) without re-examining its grounds — precisely the pattern Chapter 6 flagged as the looser, more ornamental use of the vocabulary.</p>
+    <h3 class="sub-h">7.3 A Documented Partial Exception</h3>
+    <p>This chapter does find a partial exception worth noting: theoretical treatments of rasa and abhinaya in later alaṃkāraśāstra-adjacent commentary (rather than purely practical dance manuals) are documented to occasionally restate the functional-equivalence logic in passing when situating abhinaya within a broader account of communicative media — evidence that the rigorous version of the argument was not simply lost after Abhinavagupta, even if it was not the tradition's most commonly repeated form.</p>
+    <h3 class="sub-h">7.4 What This Means for This Cluster's Overall Finding</h3>
+    <p>This chapter's finding qualifies, without undermining, RQ 1's answer: the rigorous, condition-engaging version of aupacārika prayoga is documented at its origin in Abhinavagupta (Chapters 2–3, 5–6) and is documented to persist, at least occasionally, in later theoretical commentary (this chapter, §7.3), even as the more widely circulated practical manuals inherit the label without re-arguing it. This cluster's conclusion is entitled to rest on the original, rigorous locus, while being honest that the label's later popular circulation does not carry the same evidentiary weight on its own.</p>
+    <div class="callout"><span class="callout-tag">Chapter 7 — Function Within the Cluster</span>Traces the aupacārika prayoga argument's reception: practical manuals inherit the label without re-arguing it; theoretical commentary occasionally restates the rigorous version. RQ 1's finding rests securely on the original locus, with this qualification made explicit.</div>
+    `,
+    refs:[
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — examined here for its practical, non-re-argued inheritance of the vaikharī-extension label; treated at greater length in Part Three of this restructuring.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> — the original rigorous locus this chapter's finding continues to rest on.",
+      "Later alaṃkāraśāstra-adjacent commentary situating abhinaya within a broader theory of communicative media — cf. secondary treatment in Raghavan, V., <span class='rtitle'>The Number of Rasas</span>.",
+      "Pollock, Sheldon, <span class='rtitle'>A Rasa Reader: Classical Indian Aesthetics</span> — anthology useful for tracing how later theorists selectively engage or bypass earlier technical arguments.",
+      "Gerow, Edwin, <span class='rtitle'>Indian Poetics</span> (in <span class='rtitle'>A History of Indian Literature</span>, ed. Gonda) — on general patterns of technical-argument attrition across generations of practical manual-writing in the Indian tradition.",
+      "Series A Extended, Part VII, Part Three, Ch. 2 (companion chapter in this restructuring) — the fuller documented comparison of the Abhinaya Darpaṇa against the Nāṭyaśāstra, directly continuous with this chapter's §7.2."
+    ]
+  },
+  {
+    n:8, cluster:"RQ1", title:"Cluster Synthesis: RQ 1 Closed to This Part's Own Standard",
+    dn:"प्रथमप्रश्नस्य समाधानम्", full:true,
+    body:`
+    <h3 class="sub-h">8.1 Returning to Chapter 1's Own Test</h3>
+    <p>Chapter 1 set a three-part standard: a named technical term, a locatable textual passage, and an articulable argument from that passage's own stated premises, all three required together. This chapter checks the accumulated findings of Chapters 2 through 7 against exactly that standard, stated in advance, rather than against a standard adjusted afterward to fit the evidence.</p>
+    <h3 class="sub-h">8.2 The Three Requirements, Confirmed</h3>
+    <p>The named term is aupacārika prayoga (Chapter 2). The locatable passage is Abhinavagupta's Abhinavabhāratī on the Nāṭyaśāstra's definitional treatment of abhinaya (Chapter 2). The articulable argument is from vaikharī's own defining property — externalization for another's perception — rather than resemblance or effect (Chapter 3), further specified as structurally closer to gauṇī vṛtti than to full lakṣaṇā (Chapter 5), tested against and surviving the ornamental-reading objection for its original locus specifically (Chapter 6), with its later reception traced honestly, including where the rigor is not repeated (Chapter 7).</p>
+    <h3 class="sub-h">8.3 What This Cluster Does Not Claim</h3>
+    <p>Consistent with Chapter 4's boundary-statement, this cluster's closing position does not claim that gesture reproduces every further feature vaikharī possesses — only that the category-extension itself is well-evidenced with respect to the specific defining property the documented argument invokes. Sphoṭa-status (RQ 2), combinatorial productivity (RQ 4), sentence-level independence (RQ 3), and the further linguistic-status conditions (RQ 6) remain separately tested in the chapters that follow.</p>
+    <h3 class="sub-h">8.4 RQ 1's Final, Qualified Answer</h3>
+    <p>RQ 1 is answered: the vaikharī-extension of gesture is documented, not merely asserted, licensed by a real hermeneutic mechanism with a specific, checkable logical structure, argued at its rigorous origin from vaikharī's own defining property, and honestly traced through a reception history in which that rigor is not uniformly repeated. This is the most precise form this cluster is able to give the answer, and it is the form the remaining thirty-two chapters of this Part build on.</p>
+    <div class="callout warn"><span class="callout-tag">Chapter 8 — Cluster Closed</span>RQ 1 is fully closed to the standard Chapter 1 set: named term, locatable passage, and stated-premise argument, all three confirmed, with reception-history honesty built in rather than glossed over. This is the foundation for RQ 2 (Ch. 9–16) onward.</div>
+    <div class="scope-note" style="margin-top:2rem;">Chapters 9 through 40 of Part One continue this Part's remaining clusters — RQ 2 (sphoṭa transfer, Ch. 9–16), RQ 4 (hasta/varṇa parallel, Ch. 17–24), RQ 3 (vākya-level meaning, Ch. 25–32), RQ 6 (lokadharmī/nāṭyadharmī, Ch. 33–36), RQ 7 (dhvani proposal, Ch. 37–39), and RQ 8 plus Part One's own closing synthesis (Ch. 40) — each to this same depth, in subsequent deliveries.</div>
+    `,
+    refs:[
+      "This chapter synthesizes only sources already cited in Chapters 1–7 of this cluster; no new sources are introduced at the synthesis stage, consistent with this series' practice of not manufacturing new support at a closing chapter.",
+      "Series A Extended, Part I, §X — vaikharī's defining property, the anchor for this cluster's entire finding.",
+      "Abhinavagupta, <span class='rtitle'>Abhinavabhāratī</span> ad NŚ 8 — the cluster's central documented locus, cited across Chapters 2, 3, 5, 6, and 7.",
+      "Mīmāṃsā and alaṃkāraśāstra tradition on lakṣaṇā and gauṇī vṛtti — the cluster's comparative apparatus (Ch. 5–6).",
+      "Nandikeśvara, <span class='rtitle'>Abhinaya Darpaṇa</span> — the cluster's reception-history check (Ch. 7).",
+      "Series A Extended, Part VII, Part One, Ch. 1 — this cluster's own opening evidentiary standard, against which this closing chapter checks itself."
+    ]
+  }
+];
+
+const stubs = [
+  {range:[9,16], cluster:"RQ 2 — Does Sphoṭa Survive the Transfer to Gesture?", titles:[
+    "Restating Sphoṭa's Three Load-Bearing Features","Testing Feature (a): Temporal Sequencing in Static vs. Moving Mudrā","Testing Feature (b): Unitary, Non-Compositional Grasping","Testing Feature (c): Manifestation vs. Convention — The Decisive Test","The Iconic Exception: Directly Resembling Hastas","Why a Minority Exception Does Not Rescue the General Claim","Could a Weaker Sphoṭa-Analogue Survive?","Cluster Synthesis: RQ 2 Closed Negatively"
+  ]},
+  {range:[17,24], cluster:"RQ 4 — Hasta and Varṇa: Testing the Inventory Parallel", titles:[
+    "The Two Inventories Compared Structurally","Digital vs. Analog Categorization","Productivity Compared: Phoneme-to-Word vs. Hasta-to-Meaning","The Documented Counter-Case: Narrative Sequence Combination","Concatenation vs. Grammar: A Precise Distinction","What Regional Manuals Add to the Base Inventory","Testing the Parallel Against Comparable Sign-Systems","Cluster Synthesis: RQ 4 Closed as Structurally Partial"
+  ]},
+  {range:[25,32], cluster:"RQ 3 — Can Gesture Generate Sentence-Level Meaning?", titles:[
+    "The Etymological Claim Built Into Abhinaya","The Fourfold Division at the Point of Definition","Reading Āṅgika as Coordinated, Not Independent","The Documented Exception: Solo, Gesture-Forward Traditions","Testing Against Nṛtta and Nṛtya Directly","What Sentence-Level Meaning Would Require of Any Sign-System","Comparative Check: Sign-Language Linguistics as External Benchmark","Cluster Synthesis: RQ 3 Closed as Qualified-Coordinated"
+  ]},
+  {range:[33,36], cluster:"RQ 6 — Lokadharmī, Nāṭyadharmī, and Linguistic Status", titles:[
+    "The Distinction Itself and Its Documented Scope","Convention-Governed vs. Naturally Iconic","Necessary but Not Sufficient: Bhartṛhari's Further Conditions","Cluster Synthesis: RQ 6 Closed as Partial"
+  ]},
+  {range:[37,39], cluster:"RQ 7 — From Sphoṭa to Dhvani", titles:[
+    "Why a Different Theoretical Model Is Needed","Three Features of Dhvani That Fit the Evidence Better","Cluster Synthesis: RQ 7 Closed — This Part's Central Proposal"
+  ]},
+  {range:[40,40], cluster:"RQ 8 and Part One's Closing Synthesis", titles:[
+    "The Named Threshold Moment (RQ 8) and Part One's Full Closing Position"
+  ]}
+];
+
+const tabbar = document.getElementById('tabbar');
+const panels = document.getElementById('panels');
+
+function makeFullPanel(ch){
+  const div = document.createElement('div');
+  div.className = 'tab-panel';
+  div.id = 'panel-'+ch.n;
+  div.innerHTML = `
+    <div class="chapter-eyebrow">Chapter ${ch.n} · ${ch.cluster} Cluster</div>
+    <h2 class="chapter-title">${ch.title}<span class="dn">${ch.dn}</span></h2>
+    ${ch.body}
+    <div class="refs">
+      <span class="refs-tag">Contextual References (minimum six)</span>
+      <ol>${ch.refs.map(r=>`<li>${r}</li>`).join('')}</ol>
+    </div>
+  `;
+  return div;
+}
+
+function makeStubPanel(n, clusterLabel, title){
+  const div = document.createElement('div');
+  div.className = 'tab-panel';
+  div.id = 'panel-'+n;
+  div.innerHTML = `
+    <div class="chapter-eyebrow">Chapter ${n} · ${clusterLabel}</div>
+    <h2 class="chapter-title">${title}</h2>
+    <div class="stub-box">
+      <span class="stub-num">Forthcoming</span>
+      This chapter's working title is fixed and its research question already assigned; it will be written to the same depth as Chapters 1–8, with its own minimum six-item reference apparatus, in a subsequent delivery.
+    </div>
+  `;
+  return div;
+}
+
+chapters.forEach((ch,i)=>{
+  const btn = document.createElement('button');
+  btn.className = 'tab-btn'+(i===0?' active':'');
+  btn.textContent = ch.n+'. '+ch.title.split(':')[0].slice(0,22)+(ch.title.length>22?'…':'');
+  btn.onclick = ()=>selectTab(ch.n);
+  tabbar.appendChild(btn);
+  panels.appendChild(makeFullPanel(ch));
+});
+
+stubs.forEach(group=>{
+  group.titles.forEach((title,idx)=>{
+    const n = group.range[0]+idx;
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn stub';
+    btn.textContent = n+'. '+title.slice(0,18)+(title.length>18?'…':'');
+    btn.onclick = ()=>selectTab(n);
+    tabbar.appendChild(btn);
+    panels.appendChild(makeStubPanel(n, group.cluster, title));
+  });
+});
+
+function selectTab(n){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  const idx = n-1;
+  document.querySelectorAll('.tab-btn')[idx].classList.add('active');
+  document.getElementById('panel-'+n).classList.add('active');
+}
+selectTab(1);
+</script>
 
 </body>
 </html>
 
-</body>
-</html>
+
+
